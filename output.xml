@@ -1,171 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.11.3 on win32)" generated="20230815 16:19:07.165" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.11.3 on win32)" generated="20230817 11:18:02.087" rpa="false" schemaversion="3">
 <suite id="s1" name="Datc" source="d:\đồ án\DA2\thực hành\bosch\datc.robot">
-<test id="s1-t1" name="Verify that the product detail of the choosen items appears PDF file" line="42">
-<kw name="Test open Browser">
+<test id="s1-t1" name="Verify that the choosen items have been added to the shopping cart" line="32">
+<kw name="Test open Browser" library="keyword">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230815 16:19:08.179" level="INFO">Opening browser 'chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
-<msg timestamp="20230815 16:19:08.220" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
-<status status="PASS" starttime="20230815 16:19:08.179" endtime="20230815 16:19:15.738"/>
+<msg timestamp="20230817 11:18:03.513" level="INFO">Opening browser 'chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<msg timestamp="20230817 11:18:03.532" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20230817 11:18:04.666" level="WARN">Error getting version of chromedriver 115. Retrying with chromedriver 114 (attempt 1/5)</msg>
+<status status="PASS" starttime="20230817 11:18:03.512" endtime="20230817 11:18:11.402"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230815 16:19:15.739" endtime="20230815 16:19:16.069"/>
+<status status="PASS" starttime="20230817 11:18:11.402" endtime="20230817 11:18:11.534"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230815 16:19:16.070" endtime="20230815 16:19:16.569"/>
+<status status="PASS" starttime="20230817 11:18:11.535" endtime="20230817 11:18:11.636"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230815 16:19:16.572" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
-<status status="PASS" starttime="20230815 16:19:16.570" endtime="20230815 16:19:18.652"/>
+<msg timestamp="20230817 11:18:11.637" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230817 11:18:11.637" endtime="20230817 11:18:12.141"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//*[contains(text(),'Start from scratch')]</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230815 16:19:18.653" endtime="20230815 16:19:19.215"/>
+<msg timestamp="20230817 11:18:12.485" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<status status="PASS" starttime="20230817 11:18:12.142" endtime="20230817 11:18:12.740"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[contains(text(),'Start from scratch')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230815 16:19:19.216" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
-<status status="PASS" starttime="20230815 16:19:19.215" endtime="20230815 16:19:19.674"/>
+<msg timestamp="20230817 11:18:12.740" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<status status="PASS" starttime="20230817 11:18:12.740" endtime="20230817 11:18:12.853"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//*[contains(text(),'Change package')]</arg>
 <arg>20</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230815 16:19:19.674" endtime="20230815 16:19:26.695"/>
+<status status="PASS" starttime="20230817 11:18:12.853" endtime="20230817 11:18:19.663"/>
 </kw>
-<status status="PASS" starttime="20230815 16:19:08.178" endtime="20230815 16:19:26.695"/>
+<status status="PASS" starttime="20230817 11:18:03.512" endtime="20230817 11:18:19.663"/>
 </kw>
-<kw name="Verify that user can choose the correct appliances by product hotspot">
+<kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230815 16:19:26.701" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
-<status status="PASS" starttime="20230815 16:19:26.700" endtime="20230815 16:19:27.238"/>
+<msg timestamp="20230817 11:18:19.665" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
+<status status="PASS" starttime="20230817 11:18:19.664" endtime="20230817 11:18:19.781"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//div[@class= 'c00181 zv-section']</arg>
 <arg>20</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230815 16:19:27.239" endtime="20230815 16:19:28.077"/>
+<status status="PASS" starttime="20230817 11:18:19.781" endtime="20230817 11:18:21.033"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>//span[@class= 'c00185 zv-text c00184 zv-section-headline']</arg>
 <arg>Dishwasher</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20230815 16:19:28.078" endtime="20230815 16:19:28.128"/>
+<status status="PASS" starttime="20230817 11:18:21.033" endtime="20230817 11:18:21.061"/>
 </kw>
-<status status="PASS" starttime="20230815 16:19:26.698" endtime="20230815 16:19:28.129"/>
+<status status="PASS" starttime="20230817 11:18:19.664" endtime="20230817 11:18:21.061"/>
 </kw>
-<kw name="Verify that the image of choosen item is appear in the product stage picture">
+<kw name="Verify that the image of choosen item is appear in the product stage picture" library="keyword">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//div[@class='zv-product zv-product-spe68b55uc c00288']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230815 16:19:28.131" endtime="20230815 16:19:28.189"/>
+<status status="PASS" starttime="20230817 11:18:21.062" endtime="20230817 11:18:21.085"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[@class='zv-product zv-product-spe68b55uc c00288']//button[@class='c00335 zv-button c00333 zv-product-button-add-to-summary']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230815 16:19:28.192" level="INFO">Clicking element '//div[@class='zv-product zv-product-spe68b55uc c00288']//button[@class='c00335 zv-button c00333 zv-product-button-add-to-summary']'.</msg>
-<status status="PASS" starttime="20230815 16:19:28.191" endtime="20230815 16:19:28.424"/>
+<msg timestamp="20230817 11:18:21.085" level="INFO">Clicking element '//div[@class='zv-product zv-product-spe68b55uc c00288']//button[@class='c00335 zv-button c00333 zv-product-button-add-to-summary']'.</msg>
+<status status="PASS" starttime="20230817 11:18:21.085" endtime="20230817 11:18:21.223"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//div[@class='zv-product zv-product-spe68b55uc c00288 is-selected']//span[contains(text(),'Remove from My Kitchen')]</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230815 16:19:28.425" endtime="20230815 16:19:28.479"/>
+<status status="PASS" starttime="20230817 11:18:21.223" endtime="20230817 11:18:21.252"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//div[@class='zv-product-stage-products-container c00123']//img[@alt="Selected Dishwasher. 800 Series Dishwasher 17 3/4'' Stainless steel SPE68B55UC"]</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230815 16:19:28.480" endtime="20230815 16:19:29.085"/>
+<status status="PASS" starttime="20230817 11:18:21.252" endtime="20230817 11:18:22.059"/>
 </kw>
 <kw name="Wait Until Element Does Not Contain" library="SeleniumLibrary">
 <arg>//span[@class='c00117 zv-text c00114']</arg>
 <arg>0</arg>
 <doc>Waits until the element ``locator`` does not contain ``text``.</doc>
-<status status="PASS" starttime="20230815 16:19:29.085" endtime="20230815 16:19:29.123"/>
+<status status="PASS" starttime="20230817 11:18:22.060" endtime="20230817 11:18:22.079"/>
 </kw>
-<status status="PASS" starttime="20230815 16:19:28.130" endtime="20230815 16:19:29.124"/>
+<status status="PASS" starttime="20230817 11:18:21.062" endtime="20230817 11:18:22.080"/>
 </kw>
-<kw name="Verify that the choosen items have been added to the shopping cart">
+<kw name="Verify that the choosen items have been added to the shopping cart" library="keyword">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//span[contains(text(),'My Kitchen')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230815 16:19:29.125" level="INFO">Clicking element '//span[contains(text(),'My Kitchen')]'.</msg>
-<status status="PASS" starttime="20230815 16:19:29.125" endtime="20230815 16:19:29.664"/>
+<msg timestamp="20230817 11:18:22.081" level="INFO">Clicking element '//span[contains(text(),'My Kitchen')]'.</msg>
+<status status="PASS" starttime="20230817 11:18:22.081" endtime="20230817 11:18:22.524"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>xpath=/html/body/div[4]/div[3]/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div/div/div/div/div/div/div[3]/div/div[4]/div[1]/div/div[3]/div[2]/div/div</arg>
 <arg>SPE68B55UC</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20230815 16:19:29.664" endtime="20230815 16:19:29.782"/>
+<status status="PASS" starttime="20230817 11:18:22.525" endtime="20230817 11:18:22.598"/>
 </kw>
-<status status="PASS" starttime="20230815 16:19:29.124" endtime="20230815 16:19:29.783"/>
+<status status="PASS" starttime="20230817 11:18:22.080" endtime="20230817 11:18:22.598"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//a[@href='https://media3.bosch-home.com/Documents/16865668_SPE68B55UC_Spec_Sheet.pdf']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230815 16:19:29.784" endtime="20230815 16:19:29.914"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//a[@href='https://media3.bosch-home.com/Documents/16865668_SPE68B55UC_Spec_Sheet.pdf']//span[contains(text(),'Product details')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230815 16:19:29.916" level="INFO">Clicking element '//a[@href='https://media3.bosch-home.com/Documents/16865668_SPE68B55UC_Spec_Sheet.pdf']//span[contains(text(),'Product details')]'.</msg>
-<status status="PASS" starttime="20230815 16:19:29.916" endtime="20230815 16:19:30.645"/>
-</kw>
-<kw name="Get Window Handles" library="SeleniumLibrary">
-<var>${handles}</var>
-<doc>Returns all child window handles of the selected browser as a list.</doc>
-<msg timestamp="20230815 16:19:30.819" level="INFO">${handles} = ['88D2E0E4F5EB6971CA4974E9AFB4421D', '5DC3DD7C586904CECC14942F81BB3346']</msg>
-<status status="PASS" starttime="20230815 16:19:30.648" endtime="20230815 16:19:30.819"/>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${pdf_handle}</var>
-<arg>${handles}[1]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20230815 16:19:30.825" level="INFO">${pdf_handle} = 5DC3DD7C586904CECC14942F81BB3346</msg>
-<status status="PASS" starttime="20230815 16:19:30.823" endtime="20230815 16:19:30.826"/>
-</kw>
-<kw name="Switch Window" library="SeleniumLibrary">
-<arg>${pdf_handle}</arg>
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20230815 16:19:30.827" endtime="20230815 16:19:31.034"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//embed[@type='application/pdf']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230815 16:19:31.037" endtime="20230815 16:19:31.166"/>
-</kw>
-<tag>test5</tag>
-<status status="PASS" starttime="20230815 16:19:08.177" endtime="20230815 16:19:31.167"/>
+<tag>test4</tag>
+<status status="PASS" starttime="20230817 11:18:03.511" endtime="20230817 11:18:22.599"/>
 </test>
 <doc>Simple example using SeleniumLibrary.</doc>
-<status status="PASS" starttime="20230815 16:19:07.177" endtime="20230815 16:19:31.171"/>
+<status status="PASS" starttime="20230817 11:18:02.094" endtime="20230817 11:18:22.601"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">test5</stat>
+<stat pass="1" fail="0" skip="0">test4</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Datc">Datc</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230817 11:18:04.666" level="WARN">Error getting version of chromedriver 115. Retrying with chromedriver 114 (attempt 1/5)</msg>
 </errors>
 </robot>
