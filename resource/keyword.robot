@@ -6,7 +6,7 @@ Library             Collections
 Library             Telnet
 Library             Process
 Library             String
-
+Library             DataDriver
 
 
 *** Variables ***
@@ -33,6 +33,7 @@ Verify that user can choose the correct appliances by product hotspot
     Wait Until Element Is Visible    //div[@class= 'c00181 zv-section']    20
     Wait Until Element Contains    //span[@class= 'c00185 zv-text c00184 zv-section-headline']    Dishwasher
 
+
 # testcase 2
 
 Verify that the image of choosen item is appear in the product stage picture
@@ -48,19 +49,6 @@ Verify that the image of choosen item is appear in the product stage picture
     ...    //div[@class='zv-product-stage-products-container c00123']//img[@alt="Selected Dishwasher. 800 Series Dishwasher 17 3/4'' Stainless steel SPE68B55UC"]
     ...    10
     Wait Until Element Does Not Contain    //span[@class='c00117 zv-text c00114']    0
-
-# # Find all product elements using a common class
-
-# @{products} =    Get WebElements    //div[@class='zv-product zv-product-spe68b55uc c00288']
-
-# # Iterate through the list of product elements
-
-# FOR    ${product}    IN    ${products}
-#    # Check if the product matches a certain criteria, adjust the XPath or condition accordingly
-#    ${product_name}    Get Text    ${product}/h2
-#    IF    '${product_name}' == 'Dynamic Product'    Click Element    ${product}
-
-# END
 
 # testcase 3
 
@@ -90,39 +78,23 @@ Verify that the choosen items have been added to the shopping cart
     ...    SPE68B55UC
 
 # testcase 5
+Verify that the product detail of the choosen items appears PDF file
+    Wait Until Element Is Visible
+    ...    //a[@href='https://media3.bosch-home.com/Documents/16865668_SPE68B55UC_Spec_Sheet.pdf']
+    Click Element
+    ...    //a[@href='https://media3.bosch-home.com/Documents/16865668_SPE68B55UC_Spec_Sheet.pdf']//span[contains(text(),'Product details')]
+
+    # Switch to the new tab or window containing the PDF
+    ${handles}=    Get Window Handles
+    ${pdf_handle}=    Set Variable    ${handles}[1]    # Index of the new tab/window
+    Switch Window    ${pdf_handle}
+
+    # Verify that the PDF content is visible or loaded
+    Wait Until Element Is Visible    //embed[@type='application/pdf']
+
+
+
+
 
 # ====================================================
 
-# Get PDF Content
-#     [Documentation]    Extracts text from a PDF file using pdfplumber
-#     ${pdf_path}=    Set Variable    https://media3.bosch-home.com/Documents/16865668_SPE68B55UC_Spec_Sheet.pdf
-#     ${pdf_content}=    Run Keyword And Return Status    Extract PDF Text    ${pdf_path}
-#     RETURN    ${pdf_content}
-
-# Extract PDF Text
-#     [Arguments]    ${pdf_path}
-#     # Use the pdfplumber command line tool
-#     ${pdf_content}=    Run Keyword And Return Status
-#     ...    Execute Command
-#     ...    pdfplumber ${pdf_path}
-#     RETURN    ${pdf_content.stdout}
-
-Get PDF Title
-    [Documentation]    Extracts the title of a PDF file using pdfplumber
-    ${pdf_path}=    Set Variable    https://media3.bosch-home.com/Documents/16865668_SPE68B55UC_Spec_Sheet.pdf   
-    ${pdf_title}=    Run Keyword And Return Status    Execute Command    pdfplumber ${pdf_path} --metadata   # Use the pdfplumber command line tool
-    ${metadata}=    Evaluate    json.loads('''${pdf_title}''')
-    ${title}=    Run Keyword If    "'Title:' in ${metadata}"    Get Metadata Value    ${metadata}    Title:
-    [Return]    ${title}
-
-Get Metadata Value
-    [Arguments]    ${metadata}    ${key}
-    @{lines}=    Split To Lines    ${metadata}
-    FOR    ${line}    IN    @{lines}
-        Run Keyword If    "${key}" in ${line}    Split String    ${line}    ${key}    SEPARATOR=:
-    END
-Get PDF Content
-    [Documentation]    Extracts text content of a PDF file using pdfplumber
-    ${pdf_path}=    Set Variable    path/to/your/file.pdf   # Replace with the actual PDF path
-    ${pdf_content}=    Run Keyword And Return Status    Execute Command    pdfplumber ${pdf_path} text   # Use the pdfplumber command line tool
-    [Return]    ${pdf_content.stdout}

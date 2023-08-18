@@ -1,90 +1,3239 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.11.3 on win32)" generated="20230818 16:19:28.826" rpa="false" schemaversion="3">
-<suite id="s1" name="Test" source="d:\đồ án\DA2\thực hành\bosch\test\test.robot">
-<test id="s1-t1" name="Verify that user can choose the correct appliances by product hotspot" line="11">
+<robot generator="Robot 5.0.1 (Python 3.11.3 on win32)" generated="20230818 23:56:46.336" rpa="false" schemaversion="3">
+<suite id="s1" name="Product Data" source="d:\đồ án\DA2\thực hành\bosch\test\product_data.robot">
+<test id="s1-t1" name="TC6 Data driven check product name in hotspot sidebar SPE68B55UC" line="11">
+<kw name="Verify Product Name">
+<arg>SPE68B55UC</arg>
 <kw name="Test open Browser" library="keyword">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <arg>executable_path=${CHROME_DRIVER_PATH}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230818 16:19:29.654" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
-<status status="PASS" starttime="20230818 16:19:29.652" endtime="20230818 16:19:37.769"/>
+<msg timestamp="20230818 23:56:47.253" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<status status="PASS" starttime="20230818 23:56:47.252" endtime="20230818 23:56:52.897"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230818 16:19:37.769" endtime="20230818 16:19:37.921"/>
+<status status="PASS" starttime="20230818 23:56:52.898" endtime="20230818 23:56:53.025"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230818 16:19:37.922" endtime="20230818 16:19:38.241"/>
+<status status="PASS" starttime="20230818 23:56:53.025" endtime="20230818 23:56:53.753"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230818 16:19:38.242" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
-<status status="PASS" starttime="20230818 16:19:38.241" endtime="20230818 16:19:38.670"/>
+<msg timestamp="20230818 23:56:53.754" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230818 23:56:53.754" endtime="20230818 23:56:54.071"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//*[contains(text(),'Start from scratch')]</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230818 16:19:38.671" endtime="20230818 16:19:38.795"/>
+<status status="PASS" starttime="20230818 23:56:54.072" endtime="20230818 23:56:54.208"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[contains(text(),'Start from scratch')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230818 16:19:38.796" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
-<status status="PASS" starttime="20230818 16:19:38.795" endtime="20230818 16:19:38.900"/>
+<msg timestamp="20230818 23:56:54.208" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<status status="PASS" starttime="20230818 23:56:54.208" endtime="20230818 23:56:54.286"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//*[contains(text(),'Change package')]</arg>
 <arg>20</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230818 16:19:38.901" endtime="20230818 16:19:47.844"/>
+<status status="PASS" starttime="20230818 23:56:54.286" endtime="20230818 23:56:59.205"/>
 </kw>
-<status status="PASS" starttime="20230818 16:19:29.652" endtime="20230818 16:19:47.845"/>
+<status status="PASS" starttime="20230818 23:56:47.251" endtime="20230818 23:56:59.205"/>
 </kw>
 <kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230818 16:19:47.846" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
-<status status="PASS" starttime="20230818 16:19:47.846" endtime="20230818 16:19:48.421"/>
+<msg timestamp="20230818 23:56:59.207" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
+<status status="PASS" starttime="20230818 23:56:59.206" endtime="20230818 23:56:59.624"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//div[@class= 'c00181 zv-section']</arg>
 <arg>20</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230818 16:19:48.422" endtime="20230818 16:19:48.809"/>
+<status status="PASS" starttime="20230818 23:56:59.624" endtime="20230818 23:57:00.112"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>//span[@class= 'c00185 zv-text c00184 zv-section-headline']</arg>
 <arg>Dishwasher</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20230818 16:19:48.810" endtime="20230818 16:19:48.898"/>
+<status status="PASS" starttime="20230818 23:57:00.113" endtime="20230818 23:57:00.143"/>
 </kw>
-<status status="PASS" starttime="20230818 16:19:47.845" endtime="20230818 16:19:48.898"/>
+<status status="PASS" starttime="20230818 23:56:59.206" endtime="20230818 23:57:00.143"/>
 </kw>
-<tag>test1</tag>
-<status status="PASS" starttime="20230818 16:19:29.651" endtime="20230818 16:19:48.900"/>
+<kw name="Get Web Product Names">
+<var>${web_product_names}</var>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${product_elements}</var>
+<arg>//*[@class= 'zv-product-attribute-label c00445 zv-text']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230818 23:57:00.159" level="INFO">${product_elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="184b4ff2c135be46e11916296fe1660e", element="316B2D4B1110E6CFE10312DB32E8054B_element_184")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230818 23:57:00.143" endtime="20230818 23:57:00.159"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${product_names}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230818 23:57:00.160" level="INFO">${product_names} = []</msg>
+<status status="PASS" starttime="20230818 23:57:00.160" endtime="20230818 23:57:00.160"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{product_elements}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="184b4ff2c135be46e11916296fe1660e", element="316B2D4B1110E6CFE10312DB32E8054B_element_184")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:00.173" level="INFO">${product_name} = SPE68B55UC</msg>
+<status status="PASS" starttime="20230818 23:57:00.161" endtime="20230818 23:57:00.173"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:57:00.173" endtime="20230818 23:57:00.174"/>
+</kw>
+<status status="PASS" starttime="20230818 23:57:00.160" endtime="20230818 23:57:00.174"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="184b4ff2c135be46e11916296fe1660e", element="316B2D4B1110E6CFE10312DB32E8054B_element_185")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:00.187" level="INFO">${product_name} = SPV68B53UC</msg>
+<status status="PASS" starttime="20230818 23:57:00.174" endtime="20230818 23:57:00.188"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:57:00.188" endtime="20230818 23:57:00.189"/>
+</kw>
+<status status="PASS" starttime="20230818 23:57:00.174" endtime="20230818 23:57:00.189"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="184b4ff2c135be46e11916296fe1660e", element="316B2D4B1110E6CFE10312DB32E8054B_element_186")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:00.200" level="INFO">${product_name} = SGE78B55UC</msg>
+<status status="PASS" starttime="20230818 23:57:00.189" endtime="20230818 23:57:00.200"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:57:00.200" endtime="20230818 23:57:00.201"/>
+</kw>
+<status status="PASS" starttime="20230818 23:57:00.189" endtime="20230818 23:57:00.201"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="184b4ff2c135be46e11916296fe1660e", element="316B2D4B1110E6CFE10312DB32E8054B_element_187")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:00.214" level="INFO">${product_name} = SHPM78Z55N</msg>
+<status status="PASS" starttime="20230818 23:57:00.201" endtime="20230818 23:57:00.214"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:57:00.214" endtime="20230818 23:57:00.214"/>
+</kw>
+<status status="PASS" starttime="20230818 23:57:00.201" endtime="20230818 23:57:00.214"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="184b4ff2c135be46e11916296fe1660e", element="316B2D4B1110E6CFE10312DB32E8054B_element_188")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:00.226" level="INFO">${product_name} = SGV78B53UC</msg>
+<status status="PASS" starttime="20230818 23:57:00.215" endtime="20230818 23:57:00.226"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:57:00.226" endtime="20230818 23:57:00.226"/>
+</kw>
+<status status="PASS" starttime="20230818 23:57:00.215" endtime="20230818 23:57:00.227"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="184b4ff2c135be46e11916296fe1660e", element="316B2D4B1110E6CFE10312DB32E8054B_element_189")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:00.253" level="INFO">${product_name} = SGX78B55UC</msg>
+<status status="PASS" starttime="20230818 23:57:00.227" endtime="20230818 23:57:00.253"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:57:00.254" endtime="20230818 23:57:00.254"/>
+</kw>
+<status status="PASS" starttime="20230818 23:57:00.227" endtime="20230818 23:57:00.254"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="184b4ff2c135be46e11916296fe1660e", element="316B2D4B1110E6CFE10312DB32E8054B_element_190")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:00.263" level="INFO">${product_name} = SHPM78Z54N</msg>
+<status status="PASS" starttime="20230818 23:57:00.255" endtime="20230818 23:57:00.263"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:57:00.263" endtime="20230818 23:57:00.264"/>
+</kw>
+<status status="PASS" starttime="20230818 23:57:00.255" endtime="20230818 23:57:00.264"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="184b4ff2c135be46e11916296fe1660e", element="316B2D4B1110E6CFE10312DB32E8054B_element_191")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:00.283" level="INFO">${product_name} = SHVM78Z53N</msg>
+<status status="PASS" starttime="20230818 23:57:00.264" endtime="20230818 23:57:00.283"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:57:00.283" endtime="20230818 23:57:00.284"/>
+</kw>
+<status status="PASS" starttime="20230818 23:57:00.264" endtime="20230818 23:57:00.284"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="184b4ff2c135be46e11916296fe1660e", element="316B2D4B1110E6CFE10312DB32E8054B_element_192")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:00.298" level="INFO">${product_name} = SHXM78Z55N</msg>
+<status status="PASS" starttime="20230818 23:57:00.284" endtime="20230818 23:57:00.299"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:57:00.299" endtime="20230818 23:57:00.299"/>
+</kw>
+<status status="PASS" starttime="20230818 23:57:00.284" endtime="20230818 23:57:00.299"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="184b4ff2c135be46e11916296fe1660e", element="316B2D4B1110E6CFE10312DB32E8054B_element_193")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:00.310" level="INFO">${product_name} = SHE89PW75N</msg>
+<status status="PASS" starttime="20230818 23:57:00.300" endtime="20230818 23:57:00.310"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:57:00.310" endtime="20230818 23:57:00.311"/>
+</kw>
+<status status="PASS" starttime="20230818 23:57:00.300" endtime="20230818 23:57:00.311"/>
+</iter>
+<status status="PASS" starttime="20230818 23:57:00.160" endtime="20230818 23:57:00.311"/>
+</for>
+<msg timestamp="20230818 23:57:00.311" level="INFO">${web_product_names} = ['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']</msg>
+<status status="PASS" starttime="20230818 23:57:00.143" endtime="20230818 23:57:00.311"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230818 23:57:10.311" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230818 23:57:00.311" endtime="20230818 23:57:10.311"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${web_product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20230818 23:57:10.311" endtime="20230818 23:57:10.312"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Verification for product: ${product_name} successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230818 23:57:10.312" level="INFO">Verification for product: SPE68B55UC successful</msg>
+<status status="PASS" starttime="20230818 23:57:10.312" endtime="20230818 23:57:10.312"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230818 23:57:10.312" endtime="20230818 23:57:12.394"/>
+</kw>
+<status status="PASS" starttime="20230818 23:56:47.250" endtime="20230818 23:57:12.394"/>
+</kw>
+<status status="PASS" starttime="20230818 23:56:47.249" endtime="20230818 23:57:12.396"/>
 </test>
-<doc>Simple example using SeleniumLibrary.</doc>
-<status status="PASS" starttime="20230818 16:19:28.836" endtime="20230818 16:19:48.901"/>
-</suite>
-<statistics>
-<total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
-</total>
-<tag>
-<stat pass="1" fail="0" skip="0">test1</stat>
-</tag>
-<suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
+<test id="s1-t2" name="TC6 Data driven check product name in hotspot sidebar SPV68B53UC" line="11">
+<kw name="Verify Product Name">
+<arg>SPV68B53UC</arg>
+<kw name="Test open Browser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROME_DRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230818 23:57:12.400" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<status status="PASS" starttime="20230818 23:57:12.400" endtime="20230818 23:57:17.623"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230818 23:57:17.624" endtime="20230818 23:57:17.755"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:57:17.755" endtime="20230818 23:57:18.447"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:18.447" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230818 23:57:18.447" endtime="20230818 23:57:18.808"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:57:18.809" endtime="20230818 23:57:18.944"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:18.944" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<status status="PASS" starttime="20230818 23:57:18.944" endtime="20230818 23:57:19.029"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Change package')]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230818 23:57:19.029" endtime="20230818 23:57:23.634"/>
+</kw>
+<status status="PASS" starttime="20230818 23:57:12.399" endtime="20230818 23:57:23.634"/>
+</kw>
+<kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:23.635" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
+<status status="PASS" starttime="20230818 23:57:23.635" endtime="20230818 23:57:23.984"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class= 'c00181 zv-section']</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:57:23.985" endtime="20230818 23:57:24.449"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>//span[@class= 'c00185 zv-text c00184 zv-section-headline']</arg>
+<arg>Dishwasher</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20230818 23:57:24.449" endtime="20230818 23:57:24.476"/>
+</kw>
+<status status="PASS" starttime="20230818 23:57:23.635" endtime="20230818 23:57:24.476"/>
+</kw>
+<kw name="Get Web Product Names">
+<var>${web_product_names}</var>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${product_elements}</var>
+<arg>//*[@class= 'zv-product-attribute-label c00445 zv-text']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230818 23:57:24.490" level="INFO">${product_elements} = []</msg>
+<status status="PASS" starttime="20230818 23:57:24.477" endtime="20230818 23:57:24.490"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${product_names}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230818 23:57:24.490" level="INFO">${product_names} = []</msg>
+<status status="PASS" starttime="20230818 23:57:24.490" endtime="20230818 23:57:24.491"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{product_elements}</value>
+<iter>
+<var name="${element}"/>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230818 23:57:24.491" endtime="20230818 23:57:24.491"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20230818 23:57:24.491" endtime="20230818 23:57:24.491"/>
+</kw>
+<status status="NOT RUN" starttime="20230818 23:57:24.491" endtime="20230818 23:57:24.492"/>
+</iter>
+<status status="NOT RUN" starttime="20230818 23:57:24.491" endtime="20230818 23:57:24.492"/>
+</for>
+<msg timestamp="20230818 23:57:24.492" level="INFO">${web_product_names} = []</msg>
+<status status="PASS" starttime="20230818 23:57:24.477" endtime="20230818 23:57:24.492"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230818 23:57:34.493" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230818 23:57:24.492" endtime="20230818 23:57:34.493"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${web_product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<msg timestamp="20230818 23:57:34.494" level="FAIL">'[]' does not contain 'SPV68B53UC'</msg>
+<status status="FAIL" starttime="20230818 23:57:34.493" endtime="20230818 23:57:34.507"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Verification for product: ${product_name} successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230818 23:57:34.508" endtime="20230818 23:57:34.509"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230818 23:57:34.509" endtime="20230818 23:57:34.509"/>
+</kw>
+<status status="FAIL" starttime="20230818 23:57:12.399" endtime="20230818 23:57:34.510"/>
+</kw>
+<status status="FAIL" starttime="20230818 23:57:12.398" endtime="20230818 23:57:34.512">'[]' does not contain 'SPV68B53UC'</status>
+</test>
+<test id="s1-t3" name="TC6 Data driven check product name in hotspot sidebar SGE78B55UC" line="11">
+<kw name="Verify Product Name">
+<arg>SGE78B55UC</arg>
+<kw name="Test open Browser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROME_DRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230818 23:57:34.519" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<status status="PASS" starttime="20230818 23:57:34.518" endtime="20230818 23:57:42.464"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230818 23:57:42.464" endtime="20230818 23:57:42.585"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:57:42.585" endtime="20230818 23:57:42.629"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:42.630" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230818 23:57:42.629" endtime="20230818 23:57:43.014"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:57:43.015" endtime="20230818 23:57:43.190"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:43.191" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<status status="PASS" starttime="20230818 23:57:43.191" endtime="20230818 23:57:43.316"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Change package')]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230818 23:57:43.316" endtime="20230818 23:57:48.436"/>
+</kw>
+<status status="PASS" starttime="20230818 23:57:34.517" endtime="20230818 23:57:48.437"/>
+</kw>
+<kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:57:48.440" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
+<status status="PASS" starttime="20230818 23:57:48.439" endtime="20230818 23:57:48.667"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class= 'c00181 zv-section']</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20230818 23:58:09.709" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230818 23:58:09.709" level="FAIL">Element '//div[@class= 'c00181 zv-section']' not visible after 20 seconds.</msg>
+<status status="FAIL" starttime="20230818 23:57:48.668" endtime="20230818 23:58:09.714"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>//span[@class= 'c00185 zv-text c00184 zv-section-headline']</arg>
+<arg>Dishwasher</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="NOT RUN" starttime="20230818 23:58:09.715" endtime="20230818 23:58:09.715"/>
+</kw>
+<status status="FAIL" starttime="20230818 23:57:48.438" endtime="20230818 23:58:09.716"/>
+</kw>
+<kw name="Get Web Product Names">
+<var>${web_product_names}</var>
+<status status="NOT RUN" starttime="20230818 23:58:09.716" endtime="20230818 23:58:09.716"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230818 23:58:09.717" endtime="20230818 23:58:09.717"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${web_product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" starttime="20230818 23:58:09.717" endtime="20230818 23:58:09.717"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Verification for product: ${product_name} successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230818 23:58:09.717" endtime="20230818 23:58:09.717"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230818 23:58:09.717" endtime="20230818 23:58:09.718"/>
+</kw>
+<status status="FAIL" starttime="20230818 23:57:34.517" endtime="20230818 23:58:09.718"/>
+</kw>
+<status status="FAIL" starttime="20230818 23:57:34.514" endtime="20230818 23:58:09.721">Element '//div[@class= 'c00181 zv-section']' not visible after 20 seconds.</status>
+</test>
+<test id="s1-t4" name="TC6 Data driven check product name in hotspot sidebar SHPM78Z55N" line="11">
+<kw name="Verify Product Name">
+<arg>SHPM78Z55N</arg>
+<kw name="Test open Browser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROME_DRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230818 23:58:09.727" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<status status="PASS" starttime="20230818 23:58:09.726" endtime="20230818 23:58:15.381"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230818 23:58:15.382" endtime="20230818 23:58:15.511"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:58:15.511" endtime="20230818 23:58:16.426"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:16.426" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230818 23:58:16.426" endtime="20230818 23:58:16.849"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:58:16.850" endtime="20230818 23:58:16.991"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:16.992" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<status status="PASS" starttime="20230818 23:58:16.991" endtime="20230818 23:58:17.080"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Change package')]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230818 23:58:17.081" endtime="20230818 23:58:22.980"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:09.726" endtime="20230818 23:58:22.980"/>
+</kw>
+<kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:22.981" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
+<status status="PASS" starttime="20230818 23:58:22.981" endtime="20230818 23:58:23.517"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class= 'c00181 zv-section']</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:58:23.517" endtime="20230818 23:58:24.601"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>//span[@class= 'c00185 zv-text c00184 zv-section-headline']</arg>
+<arg>Dishwasher</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20230818 23:58:24.602" endtime="20230818 23:58:24.640"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:22.980" endtime="20230818 23:58:24.641"/>
+</kw>
+<kw name="Get Web Product Names">
+<var>${web_product_names}</var>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${product_elements}</var>
+<arg>//*[@class= 'zv-product-attribute-label c00445 zv-text']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230818 23:58:24.659" level="INFO">${product_elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="7c34be374e17f67dd002ad1a1fef9b9c", element="B3E234F79A5816C89A91924F0B64D207_element_182")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230818 23:58:24.641" endtime="20230818 23:58:24.659"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${product_names}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230818 23:58:24.660" level="INFO">${product_names} = []</msg>
+<status status="PASS" starttime="20230818 23:58:24.660" endtime="20230818 23:58:24.660"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{product_elements}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="7c34be374e17f67dd002ad1a1fef9b9c", element="B3E234F79A5816C89A91924F0B64D207_element_182")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:24.675" level="INFO">${product_name} = SPE68B55UC</msg>
+<status status="PASS" starttime="20230818 23:58:24.661" endtime="20230818 23:58:24.675"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:24.676" endtime="20230818 23:58:24.676"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:24.661" endtime="20230818 23:58:24.676"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="7c34be374e17f67dd002ad1a1fef9b9c", element="B3E234F79A5816C89A91924F0B64D207_element_183")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:24.691" level="INFO">${product_name} = SPV68B53UC</msg>
+<status status="PASS" starttime="20230818 23:58:24.677" endtime="20230818 23:58:24.692"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:24.692" endtime="20230818 23:58:24.692"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:24.677" endtime="20230818 23:58:24.692"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="7c34be374e17f67dd002ad1a1fef9b9c", element="B3E234F79A5816C89A91924F0B64D207_element_184")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:24.701" level="INFO">${product_name} = SGE78B55UC</msg>
+<status status="PASS" starttime="20230818 23:58:24.693" endtime="20230818 23:58:24.701"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:24.701" endtime="20230818 23:58:24.702"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:24.693" endtime="20230818 23:58:24.702"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="7c34be374e17f67dd002ad1a1fef9b9c", element="B3E234F79A5816C89A91924F0B64D207_element_185")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:24.726" level="INFO">${product_name} = SHPM78Z55N</msg>
+<status status="PASS" starttime="20230818 23:58:24.702" endtime="20230818 23:58:24.726"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:24.727" endtime="20230818 23:58:24.727"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:24.702" endtime="20230818 23:58:24.727"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="7c34be374e17f67dd002ad1a1fef9b9c", element="B3E234F79A5816C89A91924F0B64D207_element_186")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:24.740" level="INFO">${product_name} = SGV78B53UC</msg>
+<status status="PASS" starttime="20230818 23:58:24.727" endtime="20230818 23:58:24.740"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:24.740" endtime="20230818 23:58:24.741"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:24.727" endtime="20230818 23:58:24.741"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="7c34be374e17f67dd002ad1a1fef9b9c", element="B3E234F79A5816C89A91924F0B64D207_element_187")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:24.796" level="INFO">${product_name} = SGX78B55UC</msg>
+<status status="PASS" starttime="20230818 23:58:24.741" endtime="20230818 23:58:24.796"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:24.796" endtime="20230818 23:58:24.797"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:24.741" endtime="20230818 23:58:24.797"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="7c34be374e17f67dd002ad1a1fef9b9c", element="B3E234F79A5816C89A91924F0B64D207_element_188")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:24.879" level="INFO">${product_name} = SHPM78Z54N</msg>
+<status status="PASS" starttime="20230818 23:58:24.798" endtime="20230818 23:58:24.880"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:24.880" endtime="20230818 23:58:24.880"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:24.797" endtime="20230818 23:58:24.880"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="7c34be374e17f67dd002ad1a1fef9b9c", element="B3E234F79A5816C89A91924F0B64D207_element_189")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:24.897" level="INFO">${product_name} = SHVM78Z53N</msg>
+<status status="PASS" starttime="20230818 23:58:24.881" endtime="20230818 23:58:24.897"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:24.897" endtime="20230818 23:58:24.897"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:24.881" endtime="20230818 23:58:24.897"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="7c34be374e17f67dd002ad1a1fef9b9c", element="B3E234F79A5816C89A91924F0B64D207_element_190")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:24.929" level="INFO">${product_name} = SHXM78Z55N</msg>
+<status status="PASS" starttime="20230818 23:58:24.898" endtime="20230818 23:58:24.929"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:24.930" endtime="20230818 23:58:24.931"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:24.898" endtime="20230818 23:58:24.931"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="7c34be374e17f67dd002ad1a1fef9b9c", element="B3E234F79A5816C89A91924F0B64D207_element_191")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:24.959" level="INFO">${product_name} = SHE89PW75N</msg>
+<status status="PASS" starttime="20230818 23:58:24.932" endtime="20230818 23:58:24.960"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:24.960" endtime="20230818 23:58:24.961"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:24.931" endtime="20230818 23:58:24.961"/>
+</iter>
+<status status="PASS" starttime="20230818 23:58:24.660" endtime="20230818 23:58:24.962"/>
+</for>
+<msg timestamp="20230818 23:58:24.962" level="INFO">${web_product_names} = ['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']</msg>
+<status status="PASS" starttime="20230818 23:58:24.641" endtime="20230818 23:58:24.962"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230818 23:58:34.964" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230818 23:58:24.962" endtime="20230818 23:58:34.964"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${web_product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20230818 23:58:34.965" endtime="20230818 23:58:34.965"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Verification for product: ${product_name} successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230818 23:58:34.966" level="INFO">Verification for product: SHPM78Z55N successful</msg>
+<status status="PASS" starttime="20230818 23:58:34.965" endtime="20230818 23:58:34.966"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230818 23:58:34.966" endtime="20230818 23:58:37.077"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:09.725" endtime="20230818 23:58:37.077"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:09.723" endtime="20230818 23:58:37.078"/>
+</test>
+<test id="s1-t5" name="TC6 Data driven check product name in hotspot sidebar SGV78B53UC" line="11">
+<kw name="Verify Product Name">
+<arg>SGV78B53UC</arg>
+<kw name="Test open Browser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROME_DRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230818 23:58:37.082" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<status status="PASS" starttime="20230818 23:58:37.081" endtime="20230818 23:58:43.269"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230818 23:58:43.269" endtime="20230818 23:58:43.417"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:58:43.417" endtime="20230818 23:58:43.456"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:43.458" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230818 23:58:43.457" endtime="20230818 23:58:43.882"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:58:43.882" endtime="20230818 23:58:44.048"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:44.048" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<msg timestamp="20230818 23:58:44.658" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230818 23:58:44.659" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=116.0.5845.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF685CB52A2+57122]
+	(No symbol) [0x00007FF685C2EA92]
+	(No symbol) [0x00007FF685AFE3AB]
+	(No symbol) [0x00007FF685B02382]
+	(No symbol) [0x00007FF685B03D2F]
+	(No symbol) [0x00007FF685B03E20]
+	(No symbol) [0x00007FF685B397A4]
+	(No symbol) [0x00007FF685B38DF3]
+	(No symbol) [0x00007FF685B2F25F]
+	(No symbol) [0x00007FF685B56FDA]
+	(No symbol) [0x00007FF685B2EB76]
+	(No symbol) [0x00007FF685B571F0]
+	(No symbol) [0x00007FF685B6EB82]
+	(No symbol) [0x00007FF685B56DB3]
+	(No symbol) [0x00007FF685B2D2B1]
+	(No symbol) [0x00007FF685B2E494]
+	GetHandleVerifier [0x00007FF685F5EF82+2849794]
+	GetHandleVerifier [0x00007FF685FB1D24+3189156]
+	GetHandleVerifier [0x00007FF685FAACAF+3160367]
+	GetHandleVerifier [0x00007FF685D46D06+653702]
+	(No symbol) [0x00007FF685C3A208]
+	(No symbol) [0x00007FF685C362C4]
+	(No symbol) [0x00007FF685C363F6]
+	(No symbol) [0x00007FF685C267A3]
+	BaseThreadInitThunk [0x00007FFD03DE7614+20]
+	RtlUserThreadStart [0x00007FFD05DC26B1+33]
+</msg>
+<status status="FAIL" starttime="20230818 23:58:44.048" endtime="20230818 23:58:44.664"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Change package')]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230818 23:58:44.665" endtime="20230818 23:58:44.665"/>
+</kw>
+<status status="FAIL" starttime="20230818 23:58:37.081" endtime="20230818 23:58:44.666"/>
+</kw>
+<kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
+<status status="NOT RUN" starttime="20230818 23:58:44.666" endtime="20230818 23:58:44.667"/>
+</kw>
+<kw name="Get Web Product Names">
+<var>${web_product_names}</var>
+<status status="NOT RUN" starttime="20230818 23:58:44.667" endtime="20230818 23:58:44.667"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230818 23:58:44.667" endtime="20230818 23:58:44.667"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${web_product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" starttime="20230818 23:58:44.667" endtime="20230818 23:58:44.668"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Verification for product: ${product_name} successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230818 23:58:44.668" endtime="20230818 23:58:44.668"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230818 23:58:44.668" endtime="20230818 23:58:44.669"/>
+</kw>
+<status status="FAIL" starttime="20230818 23:58:37.081" endtime="20230818 23:58:44.670"/>
+</kw>
+<status status="FAIL" starttime="20230818 23:58:37.080" endtime="20230818 23:58:44.673">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=116.0.5845.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF685CB52A2+57122]
+	(No symbol) [0x00007FF685C2EA92]
+	(No symbol) [0x00007FF685AFE3AB]
+	(No symbol) [0x00007FF685B02382]
+	(No symbol) [0x00007FF685B03D2F]
+	(No symbol) [0x00007FF685B03E20]
+	(No symbol) [0x00007FF685B397A4]
+	(No symbol) [0x00007FF685B38DF3]
+	(No symbol) [0x00007FF685B2F25F]
+	(No symbol) [0x00007FF685B56FDA]
+	(No symbol) [0x00007FF685B2EB76]
+	(No symbol) [0x00007FF685B571F0]
+	(No symbol) [0x00007FF685B6EB82]
+	(No symbol) [0x00007FF685B56DB3]
+	(No symbol) [0x00007FF685B2D2B1]
+	(No symbol) [0x00007FF685B2E494]
+	GetHandleVerifier [0x00007FF685F5EF82+2849794]
+	GetHandleVerifier [0x00007FF685FB1D24+3189156]
+	GetHandleVerifier [0x00007FF685FAACAF+3160367]
+	GetHandleVerifier [0x00007FF685D46D06+653702]
+	(No symbol) [0x00007FF685C3A208]
+	(No symbol) [0x00007FF685C362C4]
+	(No symbol) [0x00007FF685C363F6]
+	(No symbol) [0x00007FF685C267A3]
+	BaseThreadInitThunk [0x00007FFD03DE7614+20]
+	RtlUserThreadStart [0x00007FFD05DC26B1+33]
+</status>
+</test>
+<test id="s1-t6" name="TC6 Data driven check product name in hotspot sidebar SGX78B55UC" line="11">
+<kw name="Verify Product Name">
+<arg>SGX78B55UC</arg>
+<kw name="Test open Browser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROME_DRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230818 23:58:44.682" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<status status="PASS" starttime="20230818 23:58:44.681" endtime="20230818 23:58:50.246"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230818 23:58:50.246" endtime="20230818 23:58:50.362"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:58:50.362" endtime="20230818 23:58:50.934"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:50.935" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230818 23:58:50.934" endtime="20230818 23:58:51.331"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:58:51.331" endtime="20230818 23:58:51.510"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:51.510" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<status status="PASS" starttime="20230818 23:58:51.510" endtime="20230818 23:58:51.597"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Change package')]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230818 23:58:51.597" endtime="20230818 23:58:57.782"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:44.681" endtime="20230818 23:58:57.782"/>
+</kw>
+<kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:57.783" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
+<status status="PASS" starttime="20230818 23:58:57.783" endtime="20230818 23:58:58.168"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class= 'c00181 zv-section']</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:58:58.168" endtime="20230818 23:58:58.760"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>//span[@class= 'c00185 zv-text c00184 zv-section-headline']</arg>
+<arg>Dishwasher</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20230818 23:58:58.760" endtime="20230818 23:58:58.787"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:57.783" endtime="20230818 23:58:58.788"/>
+</kw>
+<kw name="Get Web Product Names">
+<var>${web_product_names}</var>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${product_elements}</var>
+<arg>//*[@class= 'zv-product-attribute-label c00445 zv-text']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230818 23:58:58.804" level="INFO">${product_elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="0e2dd2fdbe19f0731a01d9cbbbda9e75", element="B6E124783E2EE6052FB6DD5D9586CBE4_element_180")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230818 23:58:58.789" endtime="20230818 23:58:58.804"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${product_names}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230818 23:58:58.805" level="INFO">${product_names} = []</msg>
+<status status="PASS" starttime="20230818 23:58:58.805" endtime="20230818 23:58:58.805"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{product_elements}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0e2dd2fdbe19f0731a01d9cbbbda9e75", element="B6E124783E2EE6052FB6DD5D9586CBE4_element_180")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:58.933" level="INFO">${product_name} = SPE68B55UC</msg>
+<status status="PASS" starttime="20230818 23:58:58.806" endtime="20230818 23:58:58.933"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:58.934" endtime="20230818 23:58:58.934"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:58.806" endtime="20230818 23:58:58.934"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0e2dd2fdbe19f0731a01d9cbbbda9e75", element="B6E124783E2EE6052FB6DD5D9586CBE4_element_181")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:58.949" level="INFO">${product_name} = SPV68B53UC</msg>
+<status status="PASS" starttime="20230818 23:58:58.934" endtime="20230818 23:58:58.949"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:58.950" endtime="20230818 23:58:58.950"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:58.934" endtime="20230818 23:58:58.950"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0e2dd2fdbe19f0731a01d9cbbbda9e75", element="B6E124783E2EE6052FB6DD5D9586CBE4_element_182")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:58.963" level="INFO">${product_name} = SGE78B55UC</msg>
+<status status="PASS" starttime="20230818 23:58:58.950" endtime="20230818 23:58:58.963"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:58.963" endtime="20230818 23:58:58.964"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:58.950" endtime="20230818 23:58:58.964"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0e2dd2fdbe19f0731a01d9cbbbda9e75", element="B6E124783E2EE6052FB6DD5D9586CBE4_element_183")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:59.019" level="INFO">${product_name} = SHPM78Z55N</msg>
+<status status="PASS" starttime="20230818 23:58:58.964" endtime="20230818 23:58:59.019"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:59.020" endtime="20230818 23:58:59.020"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:58.964" endtime="20230818 23:58:59.021"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0e2dd2fdbe19f0731a01d9cbbbda9e75", element="B6E124783E2EE6052FB6DD5D9586CBE4_element_184")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:59.041" level="INFO">${product_name} = SGV78B53UC</msg>
+<status status="PASS" starttime="20230818 23:58:59.022" endtime="20230818 23:58:59.041"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:59.042" endtime="20230818 23:58:59.042"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:59.021" endtime="20230818 23:58:59.042"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0e2dd2fdbe19f0731a01d9cbbbda9e75", element="B6E124783E2EE6052FB6DD5D9586CBE4_element_185")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:59.077" level="INFO">${product_name} = SGX78B55UC</msg>
+<status status="PASS" starttime="20230818 23:58:59.042" endtime="20230818 23:58:59.077"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:59.077" endtime="20230818 23:58:59.078"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:59.042" endtime="20230818 23:58:59.078"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0e2dd2fdbe19f0731a01d9cbbbda9e75", element="B6E124783E2EE6052FB6DD5D9586CBE4_element_186")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:59.094" level="INFO">${product_name} = SHPM78Z54N</msg>
+<status status="PASS" starttime="20230818 23:58:59.079" endtime="20230818 23:58:59.094"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:59.095" endtime="20230818 23:58:59.096"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:59.078" endtime="20230818 23:58:59.096"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0e2dd2fdbe19f0731a01d9cbbbda9e75", element="B6E124783E2EE6052FB6DD5D9586CBE4_element_187")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:59.116" level="INFO">${product_name} = SHVM78Z53N</msg>
+<status status="PASS" starttime="20230818 23:58:59.097" endtime="20230818 23:58:59.116"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:59.116" endtime="20230818 23:58:59.116"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:59.096" endtime="20230818 23:58:59.116"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0e2dd2fdbe19f0731a01d9cbbbda9e75", element="B6E124783E2EE6052FB6DD5D9586CBE4_element_188")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:59.129" level="INFO">${product_name} = SHXM78Z55N</msg>
+<status status="PASS" starttime="20230818 23:58:59.117" endtime="20230818 23:58:59.129"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:59.130" endtime="20230818 23:58:59.130"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:59.117" endtime="20230818 23:58:59.130"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="0e2dd2fdbe19f0731a01d9cbbbda9e75", element="B6E124783E2EE6052FB6DD5D9586CBE4_element_189")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:58:59.143" level="INFO">${product_name} = SHE89PW75N</msg>
+<status status="PASS" starttime="20230818 23:58:59.130" endtime="20230818 23:58:59.143"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:58:59.143" endtime="20230818 23:58:59.144"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:59.130" endtime="20230818 23:58:59.144"/>
+</iter>
+<status status="PASS" starttime="20230818 23:58:58.806" endtime="20230818 23:58:59.144"/>
+</for>
+<msg timestamp="20230818 23:58:59.144" level="INFO">${web_product_names} = ['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']</msg>
+<status status="PASS" starttime="20230818 23:58:58.788" endtime="20230818 23:58:59.144"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230818 23:59:09.145" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230818 23:58:59.145" endtime="20230818 23:59:09.145"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${web_product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20230818 23:59:09.145" endtime="20230818 23:59:09.145"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Verification for product: ${product_name} successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230818 23:59:09.146" level="INFO">Verification for product: SGX78B55UC successful</msg>
+<status status="PASS" starttime="20230818 23:59:09.146" endtime="20230818 23:59:09.146"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230818 23:59:09.146" endtime="20230818 23:59:11.237"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:44.680" endtime="20230818 23:59:11.238"/>
+</kw>
+<status status="PASS" starttime="20230818 23:58:44.678" endtime="20230818 23:59:11.239"/>
+</test>
+<test id="s1-t7" name="TC6 Data driven check product name in hotspot sidebar SHPM78Z54N" line="11">
+<kw name="Verify Product Name">
+<arg>SHPM78Z54N</arg>
+<kw name="Test open Browser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROME_DRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230818 23:59:11.244" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<status status="PASS" starttime="20230818 23:59:11.244" endtime="20230818 23:59:18.103"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230818 23:59:18.104" endtime="20230818 23:59:18.229"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:59:18.229" endtime="20230818 23:59:18.258"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:18.259" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230818 23:59:18.259" endtime="20230818 23:59:18.702"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:59:18.702" endtime="20230818 23:59:18.875"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:18.876" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<status status="PASS" starttime="20230818 23:59:18.876" endtime="20230818 23:59:19.012"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Change package')]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230818 23:59:19.012" endtime="20230818 23:59:22.484"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:11.243" endtime="20230818 23:59:22.485"/>
+</kw>
+<kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:22.486" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
+<status status="PASS" starttime="20230818 23:59:22.485" endtime="20230818 23:59:22.600"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class= 'c00181 zv-section']</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:59:22.601" endtime="20230818 23:59:28.108"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>//span[@class= 'c00185 zv-text c00184 zv-section-headline']</arg>
+<arg>Dishwasher</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20230818 23:59:28.108" endtime="20230818 23:59:28.135"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:22.485" endtime="20230818 23:59:28.136"/>
+</kw>
+<kw name="Get Web Product Names">
+<var>${web_product_names}</var>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${product_elements}</var>
+<arg>//*[@class= 'zv-product-attribute-label c00445 zv-text']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230818 23:59:28.157" level="INFO">${product_elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="2d8e8533f42a71c6b1a3be9fa1b6bc97", element="EEF8DD3F25D6BD3E6592440ED712569E_element_187")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230818 23:59:28.137" endtime="20230818 23:59:28.157"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${product_names}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230818 23:59:28.158" level="INFO">${product_names} = []</msg>
+<status status="PASS" starttime="20230818 23:59:28.158" endtime="20230818 23:59:28.158"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{product_elements}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d8e8533f42a71c6b1a3be9fa1b6bc97", element="EEF8DD3F25D6BD3E6592440ED712569E_element_187")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:28.180" level="INFO">${product_name} = SPE68B55UC</msg>
+<status status="PASS" starttime="20230818 23:59:28.158" endtime="20230818 23:59:28.181"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:28.181" endtime="20230818 23:59:28.182"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:28.158" endtime="20230818 23:59:28.182"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d8e8533f42a71c6b1a3be9fa1b6bc97", element="EEF8DD3F25D6BD3E6592440ED712569E_element_188")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:28.197" level="INFO">${product_name} = SPV68B53UC</msg>
+<status status="PASS" starttime="20230818 23:59:28.182" endtime="20230818 23:59:28.197"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:28.197" endtime="20230818 23:59:28.198"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:28.182" endtime="20230818 23:59:28.198"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d8e8533f42a71c6b1a3be9fa1b6bc97", element="EEF8DD3F25D6BD3E6592440ED712569E_element_189")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:28.209" level="INFO">${product_name} = SGE78B55UC</msg>
+<status status="PASS" starttime="20230818 23:59:28.198" endtime="20230818 23:59:28.209"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:28.209" endtime="20230818 23:59:28.210"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:28.198" endtime="20230818 23:59:28.210"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d8e8533f42a71c6b1a3be9fa1b6bc97", element="EEF8DD3F25D6BD3E6592440ED712569E_element_190")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:28.217" level="INFO">${product_name} = SHPM78Z55N</msg>
+<status status="PASS" starttime="20230818 23:59:28.210" endtime="20230818 23:59:28.217"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:28.218" endtime="20230818 23:59:28.218"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:28.210" endtime="20230818 23:59:28.218"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d8e8533f42a71c6b1a3be9fa1b6bc97", element="EEF8DD3F25D6BD3E6592440ED712569E_element_191")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:28.229" level="INFO">${product_name} = SGV78B53UC</msg>
+<status status="PASS" starttime="20230818 23:59:28.218" endtime="20230818 23:59:28.229"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:28.229" endtime="20230818 23:59:28.229"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:28.218" endtime="20230818 23:59:28.229"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d8e8533f42a71c6b1a3be9fa1b6bc97", element="EEF8DD3F25D6BD3E6592440ED712569E_element_192")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:28.240" level="INFO">${product_name} = SGX78B55UC</msg>
+<status status="PASS" starttime="20230818 23:59:28.230" endtime="20230818 23:59:28.240"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:28.240" endtime="20230818 23:59:28.240"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:28.229" endtime="20230818 23:59:28.240"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d8e8533f42a71c6b1a3be9fa1b6bc97", element="EEF8DD3F25D6BD3E6592440ED712569E_element_193")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:28.248" level="INFO">${product_name} = SHPM78Z54N</msg>
+<status status="PASS" starttime="20230818 23:59:28.241" endtime="20230818 23:59:28.248"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:28.249" endtime="20230818 23:59:28.249"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:28.240" endtime="20230818 23:59:28.249"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d8e8533f42a71c6b1a3be9fa1b6bc97", element="EEF8DD3F25D6BD3E6592440ED712569E_element_194")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:28.260" level="INFO">${product_name} = SHVM78Z53N</msg>
+<status status="PASS" starttime="20230818 23:59:28.249" endtime="20230818 23:59:28.260"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:28.261" endtime="20230818 23:59:28.261"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:28.249" endtime="20230818 23:59:28.261"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d8e8533f42a71c6b1a3be9fa1b6bc97", element="EEF8DD3F25D6BD3E6592440ED712569E_element_195")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:28.270" level="INFO">${product_name} = SHXM78Z55N</msg>
+<status status="PASS" starttime="20230818 23:59:28.261" endtime="20230818 23:59:28.271"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:28.271" endtime="20230818 23:59:28.271"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:28.261" endtime="20230818 23:59:28.272"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d8e8533f42a71c6b1a3be9fa1b6bc97", element="EEF8DD3F25D6BD3E6592440ED712569E_element_196")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:28.281" level="INFO">${product_name} = SHE89PW75N</msg>
+<status status="PASS" starttime="20230818 23:59:28.272" endtime="20230818 23:59:28.282"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:28.282" endtime="20230818 23:59:28.282"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:28.272" endtime="20230818 23:59:28.283"/>
+</iter>
+<status status="PASS" starttime="20230818 23:59:28.158" endtime="20230818 23:59:28.283"/>
+</for>
+<msg timestamp="20230818 23:59:28.283" level="INFO">${web_product_names} = ['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']</msg>
+<status status="PASS" starttime="20230818 23:59:28.136" endtime="20230818 23:59:28.283"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230818 23:59:38.284" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230818 23:59:28.283" endtime="20230818 23:59:38.284"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${web_product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20230818 23:59:38.284" endtime="20230818 23:59:38.285"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Verification for product: ${product_name} successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230818 23:59:38.285" level="INFO">Verification for product: SHPM78Z54N successful</msg>
+<status status="PASS" starttime="20230818 23:59:38.285" endtime="20230818 23:59:38.285"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230818 23:59:38.286" endtime="20230818 23:59:40.421"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:11.243" endtime="20230818 23:59:40.422"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:11.241" endtime="20230818 23:59:40.423"/>
+</test>
+<test id="s1-t8" name="TC6 Data driven check product name in hotspot sidebar SHVM78Z53N" line="11">
+<kw name="Verify Product Name">
+<arg>SHVM78Z53N</arg>
+<kw name="Test open Browser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROME_DRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230818 23:59:40.426" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<status status="PASS" starttime="20230818 23:59:40.426" endtime="20230818 23:59:46.588"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230818 23:59:46.588" endtime="20230818 23:59:46.711"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:59:46.712" endtime="20230818 23:59:47.441"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:47.441" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230818 23:59:47.441" endtime="20230818 23:59:47.761"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:59:47.762" endtime="20230818 23:59:47.884"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:47.884" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<status status="PASS" starttime="20230818 23:59:47.884" endtime="20230818 23:59:47.963"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Change package')]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230818 23:59:47.963" endtime="20230818 23:59:53.120"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:40.425" endtime="20230818 23:59:53.121"/>
+</kw>
+<kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:53.121" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
+<status status="PASS" starttime="20230818 23:59:53.121" endtime="20230818 23:59:53.529"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class= 'c00181 zv-section']</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230818 23:59:53.530" endtime="20230818 23:59:54.191"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>//span[@class= 'c00185 zv-text c00184 zv-section-headline']</arg>
+<arg>Dishwasher</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20230818 23:59:54.191" endtime="20230818 23:59:54.227"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:53.121" endtime="20230818 23:59:54.227"/>
+</kw>
+<kw name="Get Web Product Names">
+<var>${web_product_names}</var>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${product_elements}</var>
+<arg>//*[@class= 'zv-product-attribute-label c00445 zv-text']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230818 23:59:54.245" level="INFO">${product_elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="728421c7a88a585b3ab0f8445034dfe3", element="44106870CF8E94B94578F98C6089BFCC_element_182")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230818 23:59:54.227" endtime="20230818 23:59:54.246"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${product_names}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230818 23:59:54.246" level="INFO">${product_names} = []</msg>
+<status status="PASS" starttime="20230818 23:59:54.246" endtime="20230818 23:59:54.246"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{product_elements}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="728421c7a88a585b3ab0f8445034dfe3", element="44106870CF8E94B94578F98C6089BFCC_element_182")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:54.268" level="INFO">${product_name} = SPE68B55UC</msg>
+<status status="PASS" starttime="20230818 23:59:54.247" endtime="20230818 23:59:54.268"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:54.268" endtime="20230818 23:59:54.268"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:54.246" endtime="20230818 23:59:54.268"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="728421c7a88a585b3ab0f8445034dfe3", element="44106870CF8E94B94578F98C6089BFCC_element_183")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:54.284" level="INFO">${product_name} = SPV68B53UC</msg>
+<status status="PASS" starttime="20230818 23:59:54.269" endtime="20230818 23:59:54.285"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:54.285" endtime="20230818 23:59:54.285"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:54.268" endtime="20230818 23:59:54.285"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="728421c7a88a585b3ab0f8445034dfe3", element="44106870CF8E94B94578F98C6089BFCC_element_184")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:54.300" level="INFO">${product_name} = SGE78B55UC</msg>
+<status status="PASS" starttime="20230818 23:59:54.286" endtime="20230818 23:59:54.301"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:54.301" endtime="20230818 23:59:54.301"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:54.286" endtime="20230818 23:59:54.302"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="728421c7a88a585b3ab0f8445034dfe3", element="44106870CF8E94B94578F98C6089BFCC_element_185")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:54.347" level="INFO">${product_name} = SHPM78Z55N</msg>
+<status status="PASS" starttime="20230818 23:59:54.309" endtime="20230818 23:59:54.347"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:54.347" endtime="20230818 23:59:54.348"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:54.302" endtime="20230818 23:59:54.348"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="728421c7a88a585b3ab0f8445034dfe3", element="44106870CF8E94B94578F98C6089BFCC_element_186")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:54.375" level="INFO">${product_name} = SGV78B53UC</msg>
+<status status="PASS" starttime="20230818 23:59:54.348" endtime="20230818 23:59:54.375"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:54.375" endtime="20230818 23:59:54.376"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:54.348" endtime="20230818 23:59:54.376"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="728421c7a88a585b3ab0f8445034dfe3", element="44106870CF8E94B94578F98C6089BFCC_element_187")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:54.390" level="INFO">${product_name} = SGX78B55UC</msg>
+<status status="PASS" starttime="20230818 23:59:54.377" endtime="20230818 23:59:54.391"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:54.391" endtime="20230818 23:59:54.391"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:54.377" endtime="20230818 23:59:54.392"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="728421c7a88a585b3ab0f8445034dfe3", element="44106870CF8E94B94578F98C6089BFCC_element_188")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:54.402" level="INFO">${product_name} = SHPM78Z54N</msg>
+<status status="PASS" starttime="20230818 23:59:54.392" endtime="20230818 23:59:54.402"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:54.403" endtime="20230818 23:59:54.404"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:54.392" endtime="20230818 23:59:54.404"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="728421c7a88a585b3ab0f8445034dfe3", element="44106870CF8E94B94578F98C6089BFCC_element_189")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:54.414" level="INFO">${product_name} = SHVM78Z53N</msg>
+<status status="PASS" starttime="20230818 23:59:54.405" endtime="20230818 23:59:54.414"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:54.415" endtime="20230818 23:59:54.415"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:54.404" endtime="20230818 23:59:54.415"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="728421c7a88a585b3ab0f8445034dfe3", element="44106870CF8E94B94578F98C6089BFCC_element_190")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:54.426" level="INFO">${product_name} = SHXM78Z55N</msg>
+<status status="PASS" starttime="20230818 23:59:54.415" endtime="20230818 23:59:54.426"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:54.426" endtime="20230818 23:59:54.427"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:54.415" endtime="20230818 23:59:54.427"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="728421c7a88a585b3ab0f8445034dfe3", element="44106870CF8E94B94578F98C6089BFCC_element_191")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 23:59:54.442" level="INFO">${product_name} = SHE89PW75N</msg>
+<status status="PASS" starttime="20230818 23:59:54.427" endtime="20230818 23:59:54.442"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230818 23:59:54.443" endtime="20230818 23:59:54.443"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:54.427" endtime="20230818 23:59:54.443"/>
+</iter>
+<status status="PASS" starttime="20230818 23:59:54.246" endtime="20230818 23:59:54.444"/>
+</for>
+<msg timestamp="20230818 23:59:54.444" level="INFO">${web_product_names} = ['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']</msg>
+<status status="PASS" starttime="20230818 23:59:54.227" endtime="20230818 23:59:54.444"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230819 00:00:04.446" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230818 23:59:54.445" endtime="20230819 00:00:04.446"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${web_product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20230819 00:00:04.447" endtime="20230819 00:00:04.447"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Verification for product: ${product_name} successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230819 00:00:04.449" level="INFO">Verification for product: SHVM78Z53N successful</msg>
+<status status="PASS" starttime="20230819 00:00:04.448" endtime="20230819 00:00:04.449"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230819 00:00:04.449" endtime="20230819 00:00:06.594"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:40.425" endtime="20230819 00:00:06.594"/>
+</kw>
+<status status="PASS" starttime="20230818 23:59:40.424" endtime="20230819 00:00:06.595"/>
+</test>
+<test id="s1-t9" name="TC6 Data driven check product name in hotspot sidebar SHE89PW75N" line="11">
+<kw name="Verify Product Name">
+<arg>SHE89PW75N</arg>
+<kw name="Test open Browser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROME_DRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230819 00:00:06.599" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<status status="PASS" starttime="20230819 00:00:06.598" endtime="20230819 00:00:12.928"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230819 00:00:12.928" endtime="20230819 00:00:13.048"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:00:13.048" endtime="20230819 00:00:13.764"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:13.764" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230819 00:00:13.764" endtime="20230819 00:00:14.096"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:00:14.097" endtime="20230819 00:00:14.239"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:14.240" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<status status="PASS" starttime="20230819 00:00:14.239" endtime="20230819 00:00:14.392"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Change package')]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230819 00:00:14.392" endtime="20230819 00:00:19.782"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:06.598" endtime="20230819 00:00:19.782"/>
+</kw>
+<kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:19.783" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
+<status status="PASS" starttime="20230819 00:00:19.782" endtime="20230819 00:00:20.144"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class= 'c00181 zv-section']</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:00:20.144" endtime="20230819 00:00:20.659"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>//span[@class= 'c00185 zv-text c00184 zv-section-headline']</arg>
+<arg>Dishwasher</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20230819 00:00:20.659" endtime="20230819 00:00:20.689"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:19.782" endtime="20230819 00:00:20.690"/>
+</kw>
+<kw name="Get Web Product Names">
+<var>${web_product_names}</var>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${product_elements}</var>
+<arg>//*[@class= 'zv-product-attribute-label c00445 zv-text']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230819 00:00:20.707" level="INFO">${product_elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="e98469868d28bc09f33f4db0077eba74", element="268DBED8DC10D10BC3DF70289E629549_element_182")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230819 00:00:20.691" endtime="20230819 00:00:20.708"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${product_names}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230819 00:00:20.708" level="INFO">${product_names} = []</msg>
+<status status="PASS" starttime="20230819 00:00:20.708" endtime="20230819 00:00:20.709"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{product_elements}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e98469868d28bc09f33f4db0077eba74", element="268DBED8DC10D10BC3DF70289E629549_element_182")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:20.717" level="INFO">${product_name} = SPE68B55UC</msg>
+<status status="PASS" starttime="20230819 00:00:20.709" endtime="20230819 00:00:20.718"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:20.718" endtime="20230819 00:00:20.718"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:20.709" endtime="20230819 00:00:20.718"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e98469868d28bc09f33f4db0077eba74", element="268DBED8DC10D10BC3DF70289E629549_element_183")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:20.731" level="INFO">${product_name} = SPV68B53UC</msg>
+<status status="PASS" starttime="20230819 00:00:20.719" endtime="20230819 00:00:20.731"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:20.731" endtime="20230819 00:00:20.731"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:20.719" endtime="20230819 00:00:20.732"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e98469868d28bc09f33f4db0077eba74", element="268DBED8DC10D10BC3DF70289E629549_element_184")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:20.743" level="INFO">${product_name} = SGE78B55UC</msg>
+<status status="PASS" starttime="20230819 00:00:20.732" endtime="20230819 00:00:20.743"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:20.743" endtime="20230819 00:00:20.744"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:20.732" endtime="20230819 00:00:20.744"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e98469868d28bc09f33f4db0077eba74", element="268DBED8DC10D10BC3DF70289E629549_element_185")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:20.752" level="INFO">${product_name} = SHPM78Z55N</msg>
+<status status="PASS" starttime="20230819 00:00:20.744" endtime="20230819 00:00:20.752"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:20.752" endtime="20230819 00:00:20.753"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:20.744" endtime="20230819 00:00:20.753"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e98469868d28bc09f33f4db0077eba74", element="268DBED8DC10D10BC3DF70289E629549_element_186")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:20.775" level="INFO">${product_name} = SGV78B53UC</msg>
+<status status="PASS" starttime="20230819 00:00:20.754" endtime="20230819 00:00:20.775"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:20.775" endtime="20230819 00:00:20.775"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:20.753" endtime="20230819 00:00:20.775"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e98469868d28bc09f33f4db0077eba74", element="268DBED8DC10D10BC3DF70289E629549_element_187")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:20.784" level="INFO">${product_name} = SGX78B55UC</msg>
+<status status="PASS" starttime="20230819 00:00:20.776" endtime="20230819 00:00:20.784"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:20.785" endtime="20230819 00:00:20.785"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:20.776" endtime="20230819 00:00:20.785"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e98469868d28bc09f33f4db0077eba74", element="268DBED8DC10D10BC3DF70289E629549_element_188")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:20.798" level="INFO">${product_name} = SHPM78Z54N</msg>
+<status status="PASS" starttime="20230819 00:00:20.786" endtime="20230819 00:00:20.798"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:20.798" endtime="20230819 00:00:20.799"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:20.786" endtime="20230819 00:00:20.799"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e98469868d28bc09f33f4db0077eba74", element="268DBED8DC10D10BC3DF70289E629549_element_189")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:20.826" level="INFO">${product_name} = SHVM78Z53N</msg>
+<status status="PASS" starttime="20230819 00:00:20.799" endtime="20230819 00:00:20.826"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:20.826" endtime="20230819 00:00:20.827"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:20.799" endtime="20230819 00:00:20.827"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e98469868d28bc09f33f4db0077eba74", element="268DBED8DC10D10BC3DF70289E629549_element_190")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:20.841" level="INFO">${product_name} = SHXM78Z55N</msg>
+<status status="PASS" starttime="20230819 00:00:20.827" endtime="20230819 00:00:20.841"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:20.842" endtime="20230819 00:00:20.842"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:20.827" endtime="20230819 00:00:20.842"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e98469868d28bc09f33f4db0077eba74", element="268DBED8DC10D10BC3DF70289E629549_element_191")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:20.867" level="INFO">${product_name} = SHE89PW75N</msg>
+<status status="PASS" starttime="20230819 00:00:20.842" endtime="20230819 00:00:20.868"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:20.868" endtime="20230819 00:00:20.869"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:20.842" endtime="20230819 00:00:20.869"/>
+</iter>
+<status status="PASS" starttime="20230819 00:00:20.709" endtime="20230819 00:00:20.870"/>
+</for>
+<msg timestamp="20230819 00:00:20.871" level="INFO">${web_product_names} = ['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']</msg>
+<status status="PASS" starttime="20230819 00:00:20.690" endtime="20230819 00:00:20.871"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230819 00:00:30.873" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230819 00:00:20.871" endtime="20230819 00:00:30.873"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${web_product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20230819 00:00:30.873" endtime="20230819 00:00:30.874"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Verification for product: ${product_name} successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230819 00:00:30.874" level="INFO">Verification for product: SHE89PW75N successful</msg>
+<status status="PASS" starttime="20230819 00:00:30.874" endtime="20230819 00:00:30.874"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230819 00:00:30.875" endtime="20230819 00:00:32.980"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:06.598" endtime="20230819 00:00:32.980"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:06.596" endtime="20230819 00:00:32.981"/>
+</test>
+<test id="s1-t10" name="TC6 Data driven check product name in hotspot sidebar SHV89PW73N" line="11">
+<kw name="Verify Product Name">
+<arg>SHV89PW73N</arg>
+<kw name="Test open Browser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROME_DRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230819 00:00:32.985" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<status status="PASS" starttime="20230819 00:00:32.984" endtime="20230819 00:00:40.934"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230819 00:00:40.934" endtime="20230819 00:00:41.060"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:00:41.061" endtime="20230819 00:00:41.089"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:41.089" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230819 00:00:41.089" endtime="20230819 00:00:41.453"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:00:41.454" endtime="20230819 00:00:41.525"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:41.525" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<status status="PASS" starttime="20230819 00:00:41.525" endtime="20230819 00:00:41.617"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Change package')]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230819 00:00:41.618" endtime="20230819 00:00:46.487"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:32.984" endtime="20230819 00:00:46.487"/>
+</kw>
+<kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:46.488" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
+<status status="PASS" starttime="20230819 00:00:46.488" endtime="20230819 00:00:46.830"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class= 'c00181 zv-section']</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:00:46.830" endtime="20230819 00:00:47.281"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>//span[@class= 'c00185 zv-text c00184 zv-section-headline']</arg>
+<arg>Dishwasher</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20230819 00:00:47.281" endtime="20230819 00:00:47.311"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:46.488" endtime="20230819 00:00:47.311"/>
+</kw>
+<kw name="Get Web Product Names">
+<var>${web_product_names}</var>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${product_elements}</var>
+<arg>//*[@class= 'zv-product-attribute-label c00445 zv-text']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230819 00:00:47.327" level="INFO">${product_elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="b47630cc14087b21058b165790132ca0", element="FE29FDF39A180EC06CDFAD47F794DBD3_element_179")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230819 00:00:47.312" endtime="20230819 00:00:47.327"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${product_names}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230819 00:00:47.327" level="INFO">${product_names} = []</msg>
+<status status="PASS" starttime="20230819 00:00:47.327" endtime="20230819 00:00:47.328"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{product_elements}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b47630cc14087b21058b165790132ca0", element="FE29FDF39A180EC06CDFAD47F794DBD3_element_179")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:47.340" level="INFO">${product_name} = SPE68B55UC</msg>
+<status status="PASS" starttime="20230819 00:00:47.328" endtime="20230819 00:00:47.340"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:47.340" endtime="20230819 00:00:47.340"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:47.328" endtime="20230819 00:00:47.341"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b47630cc14087b21058b165790132ca0", element="FE29FDF39A180EC06CDFAD47F794DBD3_element_180")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:47.350" level="INFO">${product_name} = SPV68B53UC</msg>
+<status status="PASS" starttime="20230819 00:00:47.341" endtime="20230819 00:00:47.350"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:47.350" endtime="20230819 00:00:47.350"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:47.341" endtime="20230819 00:00:47.350"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b47630cc14087b21058b165790132ca0", element="FE29FDF39A180EC06CDFAD47F794DBD3_element_181")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:47.361" level="INFO">${product_name} = SGE78B55UC</msg>
+<status status="PASS" starttime="20230819 00:00:47.351" endtime="20230819 00:00:47.361"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:47.362" endtime="20230819 00:00:47.362"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:47.351" endtime="20230819 00:00:47.362"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b47630cc14087b21058b165790132ca0", element="FE29FDF39A180EC06CDFAD47F794DBD3_element_182")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:47.372" level="INFO">${product_name} = SHPM78Z55N</msg>
+<status status="PASS" starttime="20230819 00:00:47.362" endtime="20230819 00:00:47.372"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:47.372" endtime="20230819 00:00:47.373"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:47.362" endtime="20230819 00:00:47.373"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b47630cc14087b21058b165790132ca0", element="FE29FDF39A180EC06CDFAD47F794DBD3_element_183")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:47.387" level="INFO">${product_name} = SGV78B53UC</msg>
+<status status="PASS" starttime="20230819 00:00:47.373" endtime="20230819 00:00:47.387"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:47.388" endtime="20230819 00:00:47.388"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:47.373" endtime="20230819 00:00:47.388"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b47630cc14087b21058b165790132ca0", element="FE29FDF39A180EC06CDFAD47F794DBD3_element_184")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:47.421" level="INFO">${product_name} = SGX78B55UC</msg>
+<status status="PASS" starttime="20230819 00:00:47.389" endtime="20230819 00:00:47.421"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:47.422" endtime="20230819 00:00:47.422"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:47.389" endtime="20230819 00:00:47.423"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b47630cc14087b21058b165790132ca0", element="FE29FDF39A180EC06CDFAD47F794DBD3_element_185")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:47.431" level="INFO">${product_name} = SHPM78Z54N</msg>
+<status status="PASS" starttime="20230819 00:00:47.423" endtime="20230819 00:00:47.431"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:47.431" endtime="20230819 00:00:47.432"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:47.423" endtime="20230819 00:00:47.432"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b47630cc14087b21058b165790132ca0", element="FE29FDF39A180EC06CDFAD47F794DBD3_element_186")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:47.457" level="INFO">${product_name} = SHVM78Z53N</msg>
+<status status="PASS" starttime="20230819 00:00:47.432" endtime="20230819 00:00:47.458"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:47.458" endtime="20230819 00:00:47.458"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:47.432" endtime="20230819 00:00:47.458"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b47630cc14087b21058b165790132ca0", element="FE29FDF39A180EC06CDFAD47F794DBD3_element_187")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:47.470" level="INFO">${product_name} = SHXM78Z55N</msg>
+<status status="PASS" starttime="20230819 00:00:47.459" endtime="20230819 00:00:47.470"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:47.471" endtime="20230819 00:00:47.472"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:47.459" endtime="20230819 00:00:47.472"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b47630cc14087b21058b165790132ca0", element="FE29FDF39A180EC06CDFAD47F794DBD3_element_188")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:00:47.479" level="INFO">${product_name} = SHE89PW75N</msg>
+<status status="PASS" starttime="20230819 00:00:47.472" endtime="20230819 00:00:47.480"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:00:47.480" endtime="20230819 00:00:47.480"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:47.472" endtime="20230819 00:00:47.480"/>
+</iter>
+<status status="PASS" starttime="20230819 00:00:47.328" endtime="20230819 00:00:47.480"/>
+</for>
+<msg timestamp="20230819 00:00:47.481" level="INFO">${web_product_names} = ['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']</msg>
+<status status="PASS" starttime="20230819 00:00:47.312" endtime="20230819 00:00:47.481"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230819 00:00:57.481" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230819 00:00:47.481" endtime="20230819 00:00:57.481"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${web_product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<msg timestamp="20230819 00:00:57.482" level="FAIL">'['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']' does not contain 'SHV89PW73N'</msg>
+<status status="FAIL" starttime="20230819 00:00:57.481" endtime="20230819 00:00:57.482"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Verification for product: ${product_name} successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230819 00:00:57.482" endtime="20230819 00:00:57.483"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230819 00:00:57.483" endtime="20230819 00:00:57.483"/>
+</kw>
+<status status="FAIL" starttime="20230819 00:00:32.984" endtime="20230819 00:00:57.483"/>
+</kw>
+<status status="FAIL" starttime="20230819 00:00:32.982" endtime="20230819 00:00:57.484">'['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']' does not contain 'SHV89PW73N'</status>
+</test>
+<test id="s1-t11" name="TC6 Data driven check product name in hotspot sidebar SHX89PW75N" line="11">
+<kw name="Verify Product Name">
+<arg>SHX89PW75N</arg>
+<kw name="Test open Browser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROME_DRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230819 00:00:57.491" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<status status="PASS" starttime="20230819 00:00:57.490" endtime="20230819 00:01:04.549"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230819 00:01:04.550" endtime="20230819 00:01:04.692"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:01:04.692" endtime="20230819 00:01:04.727"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:04.728" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230819 00:01:04.727" endtime="20230819 00:01:05.143"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:01:05.144" endtime="20230819 00:01:05.307"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:05.308" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<status status="PASS" starttime="20230819 00:01:05.307" endtime="20230819 00:01:05.409"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Change package')]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230819 00:01:05.410" endtime="20230819 00:01:10.797"/>
+</kw>
+<status status="PASS" starttime="20230819 00:00:57.490" endtime="20230819 00:01:10.798"/>
+</kw>
+<kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:10.798" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
+<status status="PASS" starttime="20230819 00:01:10.798" endtime="20230819 00:01:11.270"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class= 'c00181 zv-section']</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:01:11.271" endtime="20230819 00:01:11.932"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>//span[@class= 'c00185 zv-text c00184 zv-section-headline']</arg>
+<arg>Dishwasher</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20230819 00:01:11.932" endtime="20230819 00:01:11.959"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:10.798" endtime="20230819 00:01:11.960"/>
+</kw>
+<kw name="Get Web Product Names">
+<var>${web_product_names}</var>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${product_elements}</var>
+<arg>//*[@class= 'zv-product-attribute-label c00445 zv-text']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230819 00:01:11.975" level="INFO">${product_elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="3c6e9843dc0b6dd70a5735c5dd7cf01c", element="2E39287A27B83DDC902E41C035D2DE87_element_188")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230819 00:01:11.960" endtime="20230819 00:01:11.976"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${product_names}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230819 00:01:11.976" level="INFO">${product_names} = []</msg>
+<status status="PASS" starttime="20230819 00:01:11.976" endtime="20230819 00:01:11.976"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{product_elements}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3c6e9843dc0b6dd70a5735c5dd7cf01c", element="2E39287A27B83DDC902E41C035D2DE87_element_188")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:11.987" level="INFO">${product_name} = SPE68B55UC</msg>
+<status status="PASS" starttime="20230819 00:01:11.977" endtime="20230819 00:01:11.987"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:11.987" endtime="20230819 00:01:11.988"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:11.977" endtime="20230819 00:01:11.988"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3c6e9843dc0b6dd70a5735c5dd7cf01c", element="2E39287A27B83DDC902E41C035D2DE87_element_189")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:11.999" level="INFO">${product_name} = SPV68B53UC</msg>
+<status status="PASS" starttime="20230819 00:01:11.988" endtime="20230819 00:01:11.999"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:11.999" endtime="20230819 00:01:12.000"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:11.988" endtime="20230819 00:01:12.000"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3c6e9843dc0b6dd70a5735c5dd7cf01c", element="2E39287A27B83DDC902E41C035D2DE87_element_190")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:12.014" level="INFO">${product_name} = SGE78B55UC</msg>
+<status status="PASS" starttime="20230819 00:01:12.000" endtime="20230819 00:01:12.015"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:12.015" endtime="20230819 00:01:12.015"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:12.000" endtime="20230819 00:01:12.015"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3c6e9843dc0b6dd70a5735c5dd7cf01c", element="2E39287A27B83DDC902E41C035D2DE87_element_191")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:12.029" level="INFO">${product_name} = SHPM78Z55N</msg>
+<status status="PASS" starttime="20230819 00:01:12.016" endtime="20230819 00:01:12.029"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:12.029" endtime="20230819 00:01:12.030"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:12.015" endtime="20230819 00:01:12.030"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3c6e9843dc0b6dd70a5735c5dd7cf01c", element="2E39287A27B83DDC902E41C035D2DE87_element_192")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:12.040" level="INFO">${product_name} = SGV78B53UC</msg>
+<status status="PASS" starttime="20230819 00:01:12.030" endtime="20230819 00:01:12.040"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:12.041" endtime="20230819 00:01:12.041"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:12.030" endtime="20230819 00:01:12.041"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3c6e9843dc0b6dd70a5735c5dd7cf01c", element="2E39287A27B83DDC902E41C035D2DE87_element_193")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:12.050" level="INFO">${product_name} = SGX78B55UC</msg>
+<status status="PASS" starttime="20230819 00:01:12.041" endtime="20230819 00:01:12.050"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:12.050" endtime="20230819 00:01:12.051"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:12.041" endtime="20230819 00:01:12.051"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3c6e9843dc0b6dd70a5735c5dd7cf01c", element="2E39287A27B83DDC902E41C035D2DE87_element_194")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:12.061" level="INFO">${product_name} = SHPM78Z54N</msg>
+<status status="PASS" starttime="20230819 00:01:12.051" endtime="20230819 00:01:12.061"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:12.061" endtime="20230819 00:01:12.062"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:12.051" endtime="20230819 00:01:12.062"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3c6e9843dc0b6dd70a5735c5dd7cf01c", element="2E39287A27B83DDC902E41C035D2DE87_element_195")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:12.073" level="INFO">${product_name} = SHVM78Z53N</msg>
+<status status="PASS" starttime="20230819 00:01:12.062" endtime="20230819 00:01:12.073"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:12.073" endtime="20230819 00:01:12.073"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:12.062" endtime="20230819 00:01:12.073"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3c6e9843dc0b6dd70a5735c5dd7cf01c", element="2E39287A27B83DDC902E41C035D2DE87_element_196")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:12.082" level="INFO">${product_name} = SHXM78Z55N</msg>
+<status status="PASS" starttime="20230819 00:01:12.074" endtime="20230819 00:01:12.083"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:12.083" endtime="20230819 00:01:12.083"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:12.074" endtime="20230819 00:01:12.083"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3c6e9843dc0b6dd70a5735c5dd7cf01c", element="2E39287A27B83DDC902E41C035D2DE87_element_197")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:12.096" level="INFO">${product_name} = SHE89PW75N</msg>
+<status status="PASS" starttime="20230819 00:01:12.083" endtime="20230819 00:01:12.096"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:12.096" endtime="20230819 00:01:12.096"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:12.083" endtime="20230819 00:01:12.096"/>
+</iter>
+<status status="PASS" starttime="20230819 00:01:11.976" endtime="20230819 00:01:12.097"/>
+</for>
+<msg timestamp="20230819 00:01:12.097" level="INFO">${web_product_names} = ['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']</msg>
+<status status="PASS" starttime="20230819 00:01:11.960" endtime="20230819 00:01:12.097"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230819 00:01:22.098" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230819 00:01:12.097" endtime="20230819 00:01:22.098"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${web_product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<msg timestamp="20230819 00:01:22.100" level="FAIL">'['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']' does not contain 'SHX89PW75N'</msg>
+<status status="FAIL" starttime="20230819 00:01:22.099" endtime="20230819 00:01:22.101"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Verification for product: ${product_name} successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230819 00:01:22.102" endtime="20230819 00:01:22.102"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230819 00:01:22.103" endtime="20230819 00:01:22.105"/>
+</kw>
+<status status="FAIL" starttime="20230819 00:00:57.489" endtime="20230819 00:01:22.106"/>
+</kw>
+<status status="FAIL" starttime="20230819 00:00:57.487" endtime="20230819 00:01:22.108">'['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']' does not contain 'SHX89PW75N'</status>
+</test>
+<test id="s1-t12" name="TC6 Data driven check product name in hotspot sidebar SHE3AR72UC" line="11">
+<kw name="Verify Product Name">
+<arg>SHE3AR72UC</arg>
+<kw name="Test open Browser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROME_DRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230819 00:01:22.113" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<status status="PASS" starttime="20230819 00:01:22.113" endtime="20230819 00:01:27.425"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230819 00:01:27.426" endtime="20230819 00:01:27.574"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:01:27.575" endtime="20230819 00:01:28.324"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:28.325" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230819 00:01:28.324" endtime="20230819 00:01:28.696"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:01:28.696" endtime="20230819 00:01:28.876"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:28.877" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<status status="PASS" starttime="20230819 00:01:28.876" endtime="20230819 00:01:28.961"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Change package')]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230819 00:01:28.962" endtime="20230819 00:01:35.764"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:22.112" endtime="20230819 00:01:35.764"/>
+</kw>
+<kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:35.765" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
+<status status="PASS" starttime="20230819 00:01:35.764" endtime="20230819 00:01:35.899"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class= 'c00181 zv-section']</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:01:35.899" endtime="20230819 00:01:37.283"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>//span[@class= 'c00185 zv-text c00184 zv-section-headline']</arg>
+<arg>Dishwasher</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20230819 00:01:37.283" endtime="20230819 00:01:37.311"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:35.764" endtime="20230819 00:01:37.311"/>
+</kw>
+<kw name="Get Web Product Names">
+<var>${web_product_names}</var>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${product_elements}</var>
+<arg>//*[@class= 'zv-product-attribute-label c00445 zv-text']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230819 00:01:37.326" level="INFO">${product_elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="4ec15b95155045bd95c2ec21423c59d9", element="F0AA6EA3751E443E8B6895F15077045E_element_177")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230819 00:01:37.311" endtime="20230819 00:01:37.326"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${product_names}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230819 00:01:37.326" level="INFO">${product_names} = []</msg>
+<status status="PASS" starttime="20230819 00:01:37.326" endtime="20230819 00:01:37.327"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{product_elements}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="4ec15b95155045bd95c2ec21423c59d9", element="F0AA6EA3751E443E8B6895F15077045E_element_177")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:37.338" level="INFO">${product_name} = SPE68B55UC</msg>
+<status status="PASS" starttime="20230819 00:01:37.327" endtime="20230819 00:01:37.339"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:37.339" endtime="20230819 00:01:37.340"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:37.327" endtime="20230819 00:01:37.340"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="4ec15b95155045bd95c2ec21423c59d9", element="F0AA6EA3751E443E8B6895F15077045E_element_178")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:37.533" level="INFO">${product_name} = SPV68B53UC</msg>
+<status status="PASS" starttime="20230819 00:01:37.341" endtime="20230819 00:01:37.533"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:37.533" endtime="20230819 00:01:37.533"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:37.340" endtime="20230819 00:01:37.533"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="4ec15b95155045bd95c2ec21423c59d9", element="F0AA6EA3751E443E8B6895F15077045E_element_179")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:37.545" level="INFO">${product_name} = SGE78B55UC</msg>
+<status status="PASS" starttime="20230819 00:01:37.534" endtime="20230819 00:01:37.545"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:37.546" endtime="20230819 00:01:37.546"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:37.534" endtime="20230819 00:01:37.546"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="4ec15b95155045bd95c2ec21423c59d9", element="F0AA6EA3751E443E8B6895F15077045E_element_180")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:37.558" level="INFO">${product_name} = SHPM78Z55N</msg>
+<status status="PASS" starttime="20230819 00:01:37.546" endtime="20230819 00:01:37.558"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:37.558" endtime="20230819 00:01:37.559"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:37.546" endtime="20230819 00:01:37.559"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="4ec15b95155045bd95c2ec21423c59d9", element="F0AA6EA3751E443E8B6895F15077045E_element_181")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:37.568" level="INFO">${product_name} = SGV78B53UC</msg>
+<status status="PASS" starttime="20230819 00:01:37.559" endtime="20230819 00:01:37.568"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:37.568" endtime="20230819 00:01:37.569"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:37.559" endtime="20230819 00:01:37.569"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="4ec15b95155045bd95c2ec21423c59d9", element="F0AA6EA3751E443E8B6895F15077045E_element_182")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:37.580" level="INFO">${product_name} = SGX78B55UC</msg>
+<status status="PASS" starttime="20230819 00:01:37.570" endtime="20230819 00:01:37.580"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:37.580" endtime="20230819 00:01:37.580"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:37.570" endtime="20230819 00:01:37.580"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="4ec15b95155045bd95c2ec21423c59d9", element="F0AA6EA3751E443E8B6895F15077045E_element_183")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:37.597" level="INFO">${product_name} = SHPM78Z54N</msg>
+<status status="PASS" starttime="20230819 00:01:37.581" endtime="20230819 00:01:37.598"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:37.598" endtime="20230819 00:01:37.598"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:37.580" endtime="20230819 00:01:37.598"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="4ec15b95155045bd95c2ec21423c59d9", element="F0AA6EA3751E443E8B6895F15077045E_element_184")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:37.614" level="INFO">${product_name} = SHVM78Z53N</msg>
+<status status="PASS" starttime="20230819 00:01:37.598" endtime="20230819 00:01:37.614"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:37.614" endtime="20230819 00:01:37.615"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:37.598" endtime="20230819 00:01:37.615"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="4ec15b95155045bd95c2ec21423c59d9", element="F0AA6EA3751E443E8B6895F15077045E_element_185")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:37.628" level="INFO">${product_name} = SHXM78Z55N</msg>
+<status status="PASS" starttime="20230819 00:01:37.615" endtime="20230819 00:01:37.629"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:37.629" endtime="20230819 00:01:37.629"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:37.615" endtime="20230819 00:01:37.629"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="4ec15b95155045bd95c2ec21423c59d9", element="F0AA6EA3751E443E8B6895F15077045E_element_186")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:37.643" level="INFO">${product_name} = SHE89PW75N</msg>
+<status status="PASS" starttime="20230819 00:01:37.629" endtime="20230819 00:01:37.643"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:01:37.644" endtime="20230819 00:01:37.644"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:37.629" endtime="20230819 00:01:37.644"/>
+</iter>
+<status status="PASS" starttime="20230819 00:01:37.327" endtime="20230819 00:01:37.644"/>
+</for>
+<msg timestamp="20230819 00:01:37.645" level="INFO">${web_product_names} = ['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']</msg>
+<status status="PASS" starttime="20230819 00:01:37.311" endtime="20230819 00:01:37.645"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230819 00:01:47.646" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230819 00:01:37.645" endtime="20230819 00:01:47.646"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${web_product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<msg timestamp="20230819 00:01:47.647" level="FAIL">'['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']' does not contain 'SHE3AR72UC'</msg>
+<status status="FAIL" starttime="20230819 00:01:47.646" endtime="20230819 00:01:47.648"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Verification for product: ${product_name} successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230819 00:01:47.648" endtime="20230819 00:01:47.648"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230819 00:01:47.648" endtime="20230819 00:01:47.648"/>
+</kw>
+<status status="FAIL" starttime="20230819 00:01:22.112" endtime="20230819 00:01:47.649"/>
+</kw>
+<status status="FAIL" starttime="20230819 00:01:22.110" endtime="20230819 00:01:47.650">'['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']' does not contain 'SHE3AR72UC'</status>
+</test>
+<test id="s1-t13" name="TC6 Data driven check product name in hotspot sidebar SHE3AR76UC" line="11">
+<kw name="Verify Product Name">
+<arg>SHE3AR76UC</arg>
+<kw name="Test open Browser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=${CHROME_DRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230819 00:01:47.658" level="INFO">Opening browser 'Chrome' to base url 'https://www.bosch-home.com/us/kitchen-planning-resources?fbclid'.</msg>
+<status status="PASS" starttime="20230819 00:01:47.657" endtime="20230819 00:01:53.839"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230819 00:01:53.839" endtime="20230819 00:01:53.972"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:01:53.972" endtime="20230819 00:01:54.680"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:54.681" level="INFO">Clicking element '//a[@class='cmpboxbtn cmpboxbtnyes cmptxt_btn_yes']'.</msg>
+<status status="PASS" starttime="20230819 00:01:54.680" endtime="20230819 00:01:55.185"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:01:55.185" endtime="20230819 00:01:55.390"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Start from scratch')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:01:55.391" level="INFO">Clicking element '//*[contains(text(),'Start from scratch')]'.</msg>
+<status status="PASS" starttime="20230819 00:01:55.391" endtime="20230819 00:01:55.525"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[contains(text(),'Change package')]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230819 00:01:55.525" endtime="20230819 00:02:02.060"/>
+</kw>
+<status status="PASS" starttime="20230819 00:01:47.657" endtime="20230819 00:02:02.060"/>
+</kw>
+<kw name="Verify that user can choose the correct appliances by product hotspot" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:02:02.061" level="INFO">Clicking element '//button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']'.</msg>
+<status status="PASS" starttime="20230819 00:02:02.061" endtime="20230819 00:02:03.005"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class= 'c00181 zv-section']</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230819 00:02:03.006" endtime="20230819 00:02:03.082"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>//span[@class= 'c00185 zv-text c00184 zv-section-headline']</arg>
+<arg>Dishwasher</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20230819 00:02:03.082" endtime="20230819 00:02:03.114"/>
+</kw>
+<status status="PASS" starttime="20230819 00:02:02.061" endtime="20230819 00:02:03.114"/>
+</kw>
+<kw name="Get Web Product Names">
+<var>${web_product_names}</var>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${product_elements}</var>
+<arg>//*[@class= 'zv-product-attribute-label c00445 zv-text']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230819 00:02:03.133" level="INFO">${product_elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="df148e729d4288b5d96989c0be4a51ed", element="78F94D16AB35381B827A27AB1462129A_element_184")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230819 00:02:03.115" endtime="20230819 00:02:03.133"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${product_names}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230819 00:02:03.134" level="INFO">${product_names} = []</msg>
+<status status="PASS" starttime="20230819 00:02:03.133" endtime="20230819 00:02:03.134"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{product_elements}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="df148e729d4288b5d96989c0be4a51ed", element="78F94D16AB35381B827A27AB1462129A_element_184")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:02:03.148" level="INFO">${product_name} = SPE68B55UC</msg>
+<status status="PASS" starttime="20230819 00:02:03.135" endtime="20230819 00:02:03.148"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:02:03.148" endtime="20230819 00:02:03.148"/>
+</kw>
+<status status="PASS" starttime="20230819 00:02:03.134" endtime="20230819 00:02:03.148"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="df148e729d4288b5d96989c0be4a51ed", element="78F94D16AB35381B827A27AB1462129A_element_185")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:02:03.162" level="INFO">${product_name} = SPV68B53UC</msg>
+<status status="PASS" starttime="20230819 00:02:03.149" endtime="20230819 00:02:03.162"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:02:03.162" endtime="20230819 00:02:03.163"/>
+</kw>
+<status status="PASS" starttime="20230819 00:02:03.148" endtime="20230819 00:02:03.163"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="df148e729d4288b5d96989c0be4a51ed", element="78F94D16AB35381B827A27AB1462129A_element_186")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:02:03.177" level="INFO">${product_name} = SGE78B55UC</msg>
+<status status="PASS" starttime="20230819 00:02:03.163" endtime="20230819 00:02:03.177"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:02:03.177" endtime="20230819 00:02:03.177"/>
+</kw>
+<status status="PASS" starttime="20230819 00:02:03.163" endtime="20230819 00:02:03.178"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="df148e729d4288b5d96989c0be4a51ed", element="78F94D16AB35381B827A27AB1462129A_element_187")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:02:03.191" level="INFO">${product_name} = SHPM78Z55N</msg>
+<status status="PASS" starttime="20230819 00:02:03.178" endtime="20230819 00:02:03.191"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:02:03.191" endtime="20230819 00:02:03.192"/>
+</kw>
+<status status="PASS" starttime="20230819 00:02:03.178" endtime="20230819 00:02:03.192"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="df148e729d4288b5d96989c0be4a51ed", element="78F94D16AB35381B827A27AB1462129A_element_188")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:02:03.208" level="INFO">${product_name} = SGV78B53UC</msg>
+<status status="PASS" starttime="20230819 00:02:03.192" endtime="20230819 00:02:03.208"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:02:03.208" endtime="20230819 00:02:03.209"/>
+</kw>
+<status status="PASS" starttime="20230819 00:02:03.192" endtime="20230819 00:02:03.209"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="df148e729d4288b5d96989c0be4a51ed", element="78F94D16AB35381B827A27AB1462129A_element_189")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:02:03.230" level="INFO">${product_name} = SGX78B55UC</msg>
+<status status="PASS" starttime="20230819 00:02:03.209" endtime="20230819 00:02:03.230"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:02:03.230" endtime="20230819 00:02:03.231"/>
+</kw>
+<status status="PASS" starttime="20230819 00:02:03.209" endtime="20230819 00:02:03.231"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="df148e729d4288b5d96989c0be4a51ed", element="78F94D16AB35381B827A27AB1462129A_element_190")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:02:03.247" level="INFO">${product_name} = SHPM78Z54N</msg>
+<status status="PASS" starttime="20230819 00:02:03.231" endtime="20230819 00:02:03.247"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:02:03.247" endtime="20230819 00:02:03.248"/>
+</kw>
+<status status="PASS" starttime="20230819 00:02:03.231" endtime="20230819 00:02:03.248"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="df148e729d4288b5d96989c0be4a51ed", element="78F94D16AB35381B827A27AB1462129A_element_191")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:02:03.264" level="INFO">${product_name} = SHVM78Z53N</msg>
+<status status="PASS" starttime="20230819 00:02:03.249" endtime="20230819 00:02:03.264"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:02:03.264" endtime="20230819 00:02:03.265"/>
+</kw>
+<status status="PASS" starttime="20230819 00:02:03.248" endtime="20230819 00:02:03.265"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="df148e729d4288b5d96989c0be4a51ed", element="78F94D16AB35381B827A27AB1462129A_element_192")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:02:03.280" level="INFO">${product_name} = SHXM78Z55N</msg>
+<status status="PASS" starttime="20230819 00:02:03.265" endtime="20230819 00:02:03.280"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:02:03.280" endtime="20230819 00:02:03.280"/>
+</kw>
+<status status="PASS" starttime="20230819 00:02:03.265" endtime="20230819 00:02:03.280"/>
+</iter>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="df148e729d4288b5d96989c0be4a51ed", element="78F94D16AB35381B827A27AB1462129A_element_193")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230819 00:02:03.294" level="INFO">${product_name} = SHE89PW75N</msg>
+<status status="PASS" starttime="20230819 00:02:03.281" endtime="20230819 00:02:03.294"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230819 00:02:03.294" endtime="20230819 00:02:03.295"/>
+</kw>
+<status status="PASS" starttime="20230819 00:02:03.281" endtime="20230819 00:02:03.295"/>
+</iter>
+<status status="PASS" starttime="20230819 00:02:03.134" endtime="20230819 00:02:03.295"/>
+</for>
+<msg timestamp="20230819 00:02:03.295" level="INFO">${web_product_names} = ['SPE68B55UC', 'SPV68B53UC', 'SGE78B55UC', 'SHPM78Z55N', 'SGV78B53UC', 'SGX78B55UC', 'SHPM78Z54N', 'SHVM78Z53N', 'SHXM78Z55N', 'SHE89PW75N']</msg>
+<status status="PASS" starttime="20230819 00:02:03.115" endtime="20230819 00:02:03.295"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230819 00:02:13.295" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230819 00:02:03.295" endtime="20230819 00:02:13.295"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${web_product_names}</arg>
+<arg>${product_name}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
