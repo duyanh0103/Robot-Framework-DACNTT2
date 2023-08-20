@@ -2,12 +2,13 @@
 Library             SeleniumLibrary
 Library             SeleniumLibrary
 Library             RPA.Desktop
-Library             Collections
 Library             Telnet
 Library             Process
 Library             String
 Library             DataDriver
 
+Test Setup   Test open Browser
+Test Teardown  Close Browser
 
 *** Variables ***
 ${CHROME_DRIVER_PATH}   chromedriver/chromedriver.exe
@@ -15,6 +16,9 @@ ${CHROME_DRIVER_PATH}   chromedriver/chromedriver.exe
 ${BROWSER}      Chrome
 
 ${URL}          https://www.bosch-home.com/us/kitchen-planning-resources?fbclid
+
+${SETUP}        Test open Browser
+${TEARDOWN}     Close Browser
 *** Keywords ***
 Test open Browser
     # [Arguments]   ${locator}  

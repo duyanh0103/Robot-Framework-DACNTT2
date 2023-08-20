@@ -3,6 +3,7 @@ Documentation       Simple example using SeleniumLibrary.
 Resource            ../resource/keyword.robot
 
 Library             SeleniumLibrary
+Library             Collections
 Library             DataDriver  /product_data.csv
 
 Test Template     Verify Product Name
