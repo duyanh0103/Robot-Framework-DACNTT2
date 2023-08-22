@@ -7,8 +7,6 @@ Library             Process
 Library             String
 Library             DataDriver
 
-Test Setup   Test open Browser
-Test Teardown  Close Browser
 
 *** Variables ***
 ${CHROME_DRIVER_PATH}   chromedriver/chromedriver.exe
