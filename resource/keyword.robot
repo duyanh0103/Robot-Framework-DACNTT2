@@ -56,6 +56,7 @@ Verify that the image of choosen item is appear in the product stage picture
 
 Verify that user can remove the choosen item
     # [Arguments]   ${locator}  ${txt_value}
+    Sleep    10
     Wait Until Element Is Visible
     ...    //div[@class='zv-product zv-product-spe68b55uc c00288 is-selected']//span[contains(text(),'Remove from My Kitchen')]
     ...    10
@@ -74,6 +75,7 @@ Verify that user can remove the choosen item
 
 Verify that the choosen items have been added to the shopping cart
     Click Element    //span[contains(text(),'My Kitchen')]
+    Sleep    5
     # thay đổi nếu cart có nhiều hơn 1 item
     Element Should Contain
     ...    xpath=/html/body/div[4]/div[3]/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div/div/div/div/div/div/div[3]/div/div[4]/div[1]/div/div[3]/div[2]/div/div
@@ -93,7 +95,7 @@ Verify that the product detail of the choosen items appears PDF file
 
     # Verify that the PDF content is visible or loaded
     Wait Until Element Is Visible    //embed[@type='application/pdf']
-
+    Sleep    5
 
 
 

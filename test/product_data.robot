@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       Simple example using SeleniumLibrary.
+Documentation       Data Driven TestCase using SeleniumLibrary.
 
 Resource            ../resource/keyword.robot
 Library             SeleniumLibrary
