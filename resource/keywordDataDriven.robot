@@ -1,10 +1,11 @@
 *** Settings ***
 Library     SeleniumLibrary
 Library     SeleniumLibrary
+Library     RPA.Desktop
 Library     Telnet
 Library     Process
 Library     String
-# Library     DataDriver  
+Library     DataDriver  ../test/product_data.csv
 
 
 *** Variables ***
@@ -32,9 +33,7 @@ Test open Browser
 # testcase 1
 Verify that user can choose the correct appliances by product hotspot
     # [Arguments]    ${locator}    ${txt_value}
-    # Click Element    //button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']
-    Wait Until Element Is Visible    xpath= //*[@id="triggers-container"]/button[2]
-    Click Button    xpath= //*[@id="triggers-container"]/button[2]
+    Click Element    //button[@class='zv-trigger zv-trigger-hotspot zv-trigger-250045620 c00177 has-tooltip']
     Wait Until Element Is Visible    //div[@class= 'c00181 zv-section']    20
     Wait Until Element Contains    //span[@class= 'c00185 zv-text c00184 zv-section-headline']    Dishwasher
 
