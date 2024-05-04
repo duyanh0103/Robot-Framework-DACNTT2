@@ -29,7 +29,7 @@ Verify Product Name
 
 Get Web Product Names
     # scroll down till the end of the sidebar
-    FOR    ${end_point}    IN RANGE      1    33    1
+    FOR    ${end_point}    IN RANGE      1    42    1
         ${end_points}=    Get WebElements    xpath = /html/body/div[4]/div[3]/div/div/div/div[2]/div/div/div/div/div/div[3]/div/div/div/div/div/div/div/div[3]/div/div[6]/div/div[2]/div[${end_point}]
         Scroll To Load More Data    ${end_points}
         

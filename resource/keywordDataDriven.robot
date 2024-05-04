@@ -9,7 +9,7 @@ Library     DataDriver  ../test/product_data.csv
 
 
 *** Variables ***
-${CHROME_DRIVER_PATH}       chromedriver/chromedriver.exe
+${CHROME_DRIVER_PATH}       chromedriver/chromedriver_124/chromedriver.exe
 
 ${BROWSER}                  Chrome
 
